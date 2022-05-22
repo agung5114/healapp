@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>HEAL_uidesign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/Article-List.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/Brands.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/Header-Blue.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/Header-Dark.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/Lightbox-Gallery.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/Login-Form-Clean.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/Login-Form-Dark.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/Newsletter-Subscription-Form.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/Team-Boxed.css'%}">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-blue" style="padding-bottom: 20px;">
+            <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search" style="height: 0px;">
+                <div class="container-fluid">
+                    <div class="brands"><a href="#"> </a></div>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">Dropdown </a>
+                                <div class="dropdown-menu"><a class="dropdown-item" href="{% url 'wallet'%}">Wallet</a><a class="dropdown-item" href="{% url 'home'%}">Activity</a><a class="dropdown-item" href="{% url 'home'%}">Leaderboard</a></div>
+                            </li>
+                        </ul>
+                        <form class="form-inline mr-auto" target="_self">
+                            <div class="form-group mb-0"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" id="search-field" name="search"></div>
+                        </form><span class="navbar-text"> <a class="login" href="#">Log In</a></span><a class="btn btn-light action-button" role="button" href="#">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container hero">
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                        <section class="team-boxed">
+                            <div class="container">
+                                <div class="intro"></div>
+                                <div class="row people" style="padding: 10px;">
+                                    <div class="col" style="width: 200px;">
+                                        <h3 class="name">Profil</h3>
+                                    </div>
+                                    <div class="col">
+                                        <header></header><a href="{% url 'logout'%}">Logout</a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 item">
+                                        <div class="box"><img src="{% static 'assets/img/Tempclipboard-image.png'%}">
+                                            <header></header>
+                                            <header></header>
+                                            <h3 class="name">{{user.first_name}} {{user.last_name}}</h3>
+                                            <p class="title" style="color: rgb(170,169,169);">Umur : {{data.umur}}</p>
+                                            <p class="title" style="color: rgb(170,169,169);">NK :000032124578<br></p>
+                                            <p class="title" style="color: rgb(170,169,169);">Faskes 1: Klinik ABC<br></p>
+                                            <p class="title" style="color: rgb(170,169,169);">Kelas : 1 (satu)<br></p>
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Riwayat Penyakit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>{{data.penyakit}}</td>
+                                                        </tr>
+                                                        <tr></tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fdevelopers.google.com%2F_d%2Freturn%3Fcontinue%3Dhttps%253A%252F%252Fdevelopers.google.com%252Ffit&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn btn-primary" role="button" style="margin-bottom: 20px;" target="_blank">CONNECT TO GOOGLE FIT</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <h1>Data Fisik</h1>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th style="background: var(--white);">Description</th>
+                                        <th style="background: var(--white);">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody style="background: var(--white);">
+                                    <tr style="background: var(--white);">
+                                        <th style="background: var(--white);">Age</th>
+                                        <th style="background: var(--white);">{{data.umur}}</th>
+                                    </tr>
+                                    <tr style="background: var(--white);">
+                                        <td style="background: var(--white);">Height</td>
+                                        <td style="background: var(--white);">{{data.tb}}</td>
+                                    </tr>
+                                    <tr style="background: var(--white);">
+                                        <td style="background: var(--white);">Weight</td>
+                                        <td style="background: var(--white);">{{data.bb}}</td>
+                                    </tr>
+                                    <tr style="background: var(--white);">
+                                        <td style="background: var(--white);">Disease</td>
+                                        <td style="background: var(--white);">{{data.penyakit}}</td>
+                                    </tr>
+                                    <tr style="background: var(--white);">
+                                        <td style="background: var(--white);">Patient Status</td>
+                                        <td style="background: var(--white);">Platinum</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h1>Statistik Hari Ini</h1>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr></tr>
+                                </thead>
+                                <tbody style="background: var(--white);">
+                                    <tr style="background: var(--white);">
+                                        <td style="background: var(--white);text-align: left;">Kalori Out</td>
+                                        <td style="background: var(--white);text-align: right;">1200kkal</td>
+                                    </tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr style="background: var(--white);">
+                                        <td style="background: var(--white);text-align: left;">Kalori In</td>
+                                        <td style="background: var(--white);text-align: right;">2300kkal</td>
+                                    </tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr></tr>
+                                </thead>
+                                <tbody style="background: var(--white);">
+                                    <tr style="background: var(--white);">
+                                        <td style="background: var(--white);text-align: left;">Karbohidrat</td>
+                                        <td style="background: var(--white);text-align: right;">100gr</td>
+                                    </tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr style="background: var(--white);">
+                                        <td style="background: var(--white);text-align: left;">Lemak</td>
+                                        <td style="background: var(--white);text-align: right;">10gr</td>
+                                    </tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr></tr>
+                                </thead>
+                                <tbody style="background: var(--white);">
+                                    <tr></tr>
+                                    <tr style="background: var(--white);">
+                                        <td style="background: var(--white);text-align: left;">Protein</td>
+                                        <td style="background: var(--white);text-align: right;">20gr</td>
+                                    </tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr style="background: var(--white);">
+                                        <td style="background: var(--white);text-align: left;">Garam</td>
+                                        <td style="background: var(--white);text-align: right;">rendah</td>
+                                    </tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                    <tr></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <section class="photo-gallery">
+                            <div class="container">
+                                <div class="intro">
+                                    <h2 class="text-center">Aktifitas Saya</h2>
+                                </div>
+                                <div class="row photos">
+                                    <div class="col-sm-6 col-md-4 col-lg-3 item" style="color: rgba(0,0,0,0.2);background: rgba(255,255,255,0.3);"><a href="{% url 'makan'%}"><img class="img-fluid" src="{% static 'assets/img/makan.png'%}" style="margin-top: 20px;height: 81px;"></a>
+                                        <h1 style="background: rgba(255,255,255,0.3);color: var(--cyan);font-family: 'Source Sans Pro', sans-serif;line-height: 40px;font-size: 25px;">Makan &amp; Minum</h1>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% url 'olahraga'%}"><img class="img-fluid" src="{% static 'assets/img/olahraga.png'%}" style="height: 81px;margin-top: 20px;"></a>
+                                        <h1 style="background: rgba(255,255,255,0.3);color: var(--cyan);font-family: 'Source Sans Pro', sans-serif;line-height: 40px;font-size: 25px;">Olahraga</h1>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="{% url 'obat'%}"><img class="img-fluid" src="{% static 'assets/img/obat.png'%}" style="margin-top: 20px;height: 81px;"></a>
+                                        <h1 style="background: rgba(255,255,255,0.3);color: var(--cyan);font-family: 'Source Sans Pro', sans-serif;line-height: 40px;font-size: 25px;">Obat-obatan</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
+                        <div class="phone-mockup"><img class="device" src="{% static 'assets/img/phone.svg'%}">
+                            <div class="screen"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+</body>
+
+</html>
