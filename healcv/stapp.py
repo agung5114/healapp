@@ -22,9 +22,9 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
-mp_drawing = mp.solutions.drawing_utils
-mp_pose = mp.solutions.pose
-website_icon = Image.open('MyGymBuddy.jpg')   
+#mp_drawing = mp.solutions.drawing_utils
+#mp_pose = mp.solutions.pose
+#website_icon = Image.open('MyGymBuddy.jpg')   
 
 st.set_page_config(
     page_title='healcv',
