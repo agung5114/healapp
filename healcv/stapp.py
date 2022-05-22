@@ -10,7 +10,7 @@ import joblib
 import operator
 import sys
 
-import mediapipe as mp
+#import mediapipe as mp
 import main
 import requests
 from streamlit_lottie import st_lottie
