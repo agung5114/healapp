@@ -1,12 +1,12 @@
 #!/usr/bin/python
 
 import cv2
-import mediapipe as mp
+# import mediapipe as mp
 import numpy as np
 import time
 
-mp_drawing = mp.solutions.drawing_utils
-mp_pose = mp.solutions.pose
+# mp_drawing = mp.solutions.drawing_utils
+# mp_pose = mp.solutions.pose
 
 def calculate_angle(a,b,c):
     a = np.array(a) # First
