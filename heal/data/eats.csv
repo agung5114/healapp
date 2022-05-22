@@ -1,0 +1,601 @@
+﻿Idp,name,daytime,date,menu,calorie
+1,Krisno Ronaldo,pagi,2022-04-01,Tongseng,721
+1,Krisno Ronaldo,siang,2022-04-01,Soto Ayam,716
+1,Krisno Ronaldo,malam,2022-04-01,Sup Ayam,479
+1,Krisno Ronaldo,snacks,2022-04-01,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-02,Sup Ayam,479
+1,Krisno Ronaldo,siang,2022-04-02,Sate Ayam,744
+1,Krisno Ronaldo,malam,2022-04-02,Sup Ayam,479
+1,Krisno Ronaldo,snacks,2022-04-02,Alpukat,966
+1,Krisno Ronaldo,pagi,2022-04-03,Ayam Nugget,689
+1,Krisno Ronaldo,siang,2022-04-03,Ketoprak,806
+1,Krisno Ronaldo,malam,2022-04-03,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-03,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-04,Ayam Goreng,616
+1,Krisno Ronaldo,siang,2022-04-04,Ikan Lele,608
+1,Krisno Ronaldo,malam,2022-04-04,Ayam Bakar,502
+1,Krisno Ronaldo,snacks,2022-04-04,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-05,Ikan Lele,608
+1,Krisno Ronaldo,siang,2022-04-05,Sate Padang,644
+1,Krisno Ronaldo,malam,2022-04-05,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-05,Alpukat,966
+1,Krisno Ronaldo,pagi,2022-04-06,Kentang Goreng,596
+1,Krisno Ronaldo,siang,2022-04-06,Sup Ayam,479
+1,Krisno Ronaldo,malam,2022-04-06,Ayam Nugget,689
+1,Krisno Ronaldo,snacks,2022-04-06,Apel,216
+1,Krisno Ronaldo,pagi,2022-04-07,Mie Goreng Instan,754
+1,Krisno Ronaldo,siang,2022-04-07,Soto Daging,623
+1,Krisno Ronaldo,malam,2022-04-07,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-07,Pepaya,165
+2,David Bekam,pagi,2022-04-01,Ikan Kembung,546
+2,David Bekam,siang,2022-04-01,Udang,526
+2,David Bekam,malam,2022-04-01,Soto Makassar,693
+2,David Bekam,snacks,2022-04-01,Jeruk,186
+2,David Bekam,pagi,2022-04-02,Sup Ayam,479
+2,David Bekam,siang,2022-04-02,Ikan Lele,608
+2,David Bekam,malam,2022-04-02,Susu,526
+2,David Bekam,snacks,2022-04-02,Alpukat,966
+2,David Bekam,pagi,2022-04-03,Sayur Asam,484
+2,David Bekam,siang,2022-04-03,Ikan Kembung,546
+2,David Bekam,malam,2022-04-03,Ketoprak,806
+2,David Bekam,snacks,2022-04-03,Alpukat,966
+2,David Bekam,pagi,2022-04-04,Nasi Goreng,654
+2,David Bekam,siang,2022-04-04,Ikan Lele,608
+2,David Bekam,malam,2022-04-04,Ikan Lele,608
+2,David Bekam,snacks,2022-04-04,Apel,216
+2,David Bekam,pagi,2022-04-05,Cumi-Cumi,456
+2,David Bekam,siang,2022-04-05,Telor Dadar,497
+2,David Bekam,malam,2022-04-05,Ayam Panggang,551
+2,David Bekam,snacks,2022-04-05,Alpukat,966
+2,David Bekam,pagi,2022-04-06,Ikan Lele,608
+2,David Bekam,siang,2022-04-06,Ketoprak,806
+2,David Bekam,malam,2022-04-06,Sayur Asam,484
+2,David Bekam,snacks,2022-04-06,Anggur,9
+2,David Bekam,pagi,2022-04-07,Tongseng,721
+2,David Bekam,siang,2022-04-07,Soto Ayam,716
+2,David Bekam,malam,2022-04-07,Ikan Kembung,546
+2,David Bekam,snacks,2022-04-07,Mangga,321
+3,Paul Soleh,pagi,2022-04-01,Rawon,692
+3,Paul Soleh,siang,2022-04-01,Ketoprak,806
+3,Paul Soleh,malam,2022-04-01,Ketoprak,806
+3,Paul Soleh,snacks,2022-04-01,Pisang,315
+3,Paul Soleh,pagi,2022-04-02,Ketoprak,806
+3,Paul Soleh,siang,2022-04-02,Ketoprak,806
+3,Paul Soleh,malam,2022-04-02,Gudeg Yogya,710
+3,Paul Soleh,snacks,2022-04-02,Pepaya,165
+3,Paul Soleh,pagi,2022-04-03,Ayam Bakar,502
+3,Paul Soleh,siang,2022-04-03,Soto Daging,623
+3,Paul Soleh,malam,2022-04-03,Ayam Nugget,689
+3,Paul Soleh,snacks,2022-04-03,Alpukat,966
+3,Paul Soleh,pagi,2022-04-04,Ikan Kembung,546
+3,Paul Soleh,siang,2022-04-04,Pempek Palembang,638
+3,Paul Soleh,malam,2022-04-04,Sayur Asam,484
+3,Paul Soleh,snacks,2022-04-04,Apel,216
+3,Paul Soleh,pagi,2022-04-05,Mie Goreng Instan,754
+3,Paul Soleh,siang,2022-04-05,Tongseng,721
+3,Paul Soleh,malam,2022-04-05,Ayam Bakar,502
+3,Paul Soleh,snacks,2022-04-05,Alpukat,966
+3,Paul Soleh,pagi,2022-04-06,Nasi Goreng,654
+3,Paul Soleh,siang,2022-04-06,Pempek Palembang,638
+3,Paul Soleh,malam,2022-04-06,Kentang Goreng,596
+3,Paul Soleh,snacks,2022-04-06,Apel,216
+3,Paul Soleh,pagi,2022-04-07,Bubur Ayam,776
+3,Paul Soleh,siang,2022-04-07,Tongseng,721
+3,Paul Soleh,malam,2022-04-07,Ayam Goreng,616
+3,Paul Soleh,snacks,2022-04-07,Jeruk,186
+4,Wayne Rini,pagi,2022-04-01,Bubur Ayam,776
+4,Wayne Rini,siang,2022-04-01,Kentang Goreng,596
+4,Wayne Rini,malam,2022-04-01,Ayam Bakar,502
+4,Wayne Rini,snacks,2022-04-01,Apel,216
+4,Wayne Rini,pagi,2022-04-02,Telor Dadar,497
+4,Wayne Rini,siang,2022-04-02,Ayam Bakar,502
+4,Wayne Rini,malam,2022-04-02,Ikan Kembung,546
+4,Wayne Rini,snacks,2022-04-02,Jeruk,186
+4,Wayne Rini,pagi,2022-04-03,Bakso Mie Bakso,792
+4,Wayne Rini,siang,2022-04-03,Mie Goreng Instan,754
+4,Wayne Rini,malam,2022-04-03,Siomay,507
+4,Wayne Rini,snacks,2022-04-03,Alpukat,966
+4,Wayne Rini,pagi,2022-04-04,Tongseng,721
+4,Wayne Rini,siang,2022-04-04,Susu,526
+4,Wayne Rini,malam,2022-04-04,Bakso Mie Bakso,792
+4,Wayne Rini,snacks,2022-04-04,Pisang,315
+4,Wayne Rini,pagi,2022-04-05,Ikan Kembung,546
+4,Wayne Rini,siang,2022-04-05,Ikan Kembung,546
+4,Wayne Rini,malam,2022-04-05,Udang,526
+4,Wayne Rini,snacks,2022-04-05,Alpukat,966
+4,Wayne Rini,pagi,2022-04-06,Pempek Palembang,638
+4,Wayne Rini,siang,2022-04-06,Susu,526
+4,Wayne Rini,malam,2022-04-06,Soto Padang,1011
+4,Wayne Rini,snacks,2022-04-06,Jeruk,186
+4,Wayne Rini,pagi,2022-04-07,Soto Padang,1011
+4,Wayne Rini,siang,2022-04-07,Ikan Lele,608
+4,Wayne Rini,malam,2022-04-07,Pempek Palembang,638
+4,Wayne Rini,snacks,2022-04-07,Anggur,9
+5,Ririn Giggs,pagi,2022-04-01,Udang,526
+5,Ririn Giggs,siang,2022-04-01,Ikan Kembung,546
+5,Ririn Giggs,malam,2022-04-01,Cumi-Cumi,456
+5,Ririn Giggs,snacks,2022-04-01,Anggur,9
+5,Ririn Giggs,pagi,2022-04-02,Sate Ayam,744
+5,Ririn Giggs,siang,2022-04-02,Rawon,692
+5,Ririn Giggs,malam,2022-04-02,Ayam Panggang,551
+5,Ririn Giggs,snacks,2022-04-02,Anggur,9
+5,Ririn Giggs,pagi,2022-04-03,Ayam Panggang,551
+5,Ririn Giggs,siang,2022-04-03,Sate Padang,644
+5,Ririn Giggs,malam,2022-04-03,Ayam Nugget,689
+5,Ririn Giggs,snacks,2022-04-03,Pisang,315
+5,Ririn Giggs,pagi,2022-04-04,Pempek Palembang,638
+5,Ririn Giggs,siang,2022-04-04,Soto Padang,1011
+5,Ririn Giggs,malam,2022-04-04,Sate Ayam,744
+5,Ririn Giggs,snacks,2022-04-04,Pepaya,165
+5,Ririn Giggs,pagi,2022-04-05,Siomay,507
+5,Ririn Giggs,siang,2022-04-05,Ayam Panggang,551
+5,Ririn Giggs,malam,2022-04-05,Kentang Goreng,596
+5,Ririn Giggs,snacks,2022-04-05,Mangga,321
+5,Ririn Giggs,pagi,2022-04-06,Ayam Goreng,616
+5,Ririn Giggs,siang,2022-04-06,Sup Ayam,479
+5,Ririn Giggs,malam,2022-04-06,Rawon,692
+5,Ririn Giggs,snacks,2022-04-06,Alpukat,966
+5,Ririn Giggs,pagi,2022-04-07,Soto Daging,623
+5,Ririn Giggs,siang,2022-04-07,Bakso Mie Bakso,792
+5,Ririn Giggs,malam,2022-04-07,Cumi-Cumi,456
+5,Ririn Giggs,snacks,2022-04-07,Mangga,321
+1,Krisno Ronaldo,pagi,2022-04-08,Tongseng,721
+1,Krisno Ronaldo,siang,2022-04-08,Soto Ayam,716
+1,Krisno Ronaldo,malam,2022-04-08,Sup Ayam,479
+1,Krisno Ronaldo,snacks,2022-04-08,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-09,Sup Ayam,479
+1,Krisno Ronaldo,siang,2022-04-09,Sate Ayam,744
+1,Krisno Ronaldo,malam,2022-04-09,Sup Ayam,479
+1,Krisno Ronaldo,snacks,2022-04-09,Alpukat,966
+1,Krisno Ronaldo,pagi,2022-04-10,Ayam Nugget,689
+1,Krisno Ronaldo,siang,2022-04-10,Ketoprak,806
+1,Krisno Ronaldo,malam,2022-04-10,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-10,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-11,Ayam Goreng,616
+1,Krisno Ronaldo,siang,2022-04-11,Ikan Lele,608
+1,Krisno Ronaldo,malam,2022-04-11,Ayam Bakar,502
+1,Krisno Ronaldo,snacks,2022-04-11,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-12,Ikan Lele,608
+1,Krisno Ronaldo,siang,2022-04-12,Sate Padang,644
+1,Krisno Ronaldo,malam,2022-04-12,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-12,Alpukat,966
+1,Krisno Ronaldo,pagi,2022-04-13,Kentang Goreng,596
+1,Krisno Ronaldo,siang,2022-04-13,Sup Ayam,479
+1,Krisno Ronaldo,malam,2022-04-13,Ayam Nugget,689
+1,Krisno Ronaldo,snacks,2022-04-13,Apel,216
+1,Krisno Ronaldo,pagi,2022-04-14,Mie Goreng Instan,754
+1,Krisno Ronaldo,siang,2022-04-14,Soto Daging,623
+1,Krisno Ronaldo,malam,2022-04-14,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-14,Pepaya,165
+2,David Bekam,pagi,2022-04-08,Ikan Kembung,546
+2,David Bekam,siang,2022-04-08,Udang,526
+2,David Bekam,malam,2022-04-08,Soto Makassar,693
+2,David Bekam,snacks,2022-04-08,Jeruk,186
+2,David Bekam,pagi,2022-04-09,Sup Ayam,479
+2,David Bekam,siang,2022-04-09,Ikan Lele,608
+2,David Bekam,malam,2022-04-09,Susu,526
+2,David Bekam,snacks,2022-04-09,Alpukat,966
+2,David Bekam,pagi,2022-04-10,Sayur Asam,484
+2,David Bekam,siang,2022-04-10,Ikan Kembung,546
+2,David Bekam,malam,2022-04-10,Ketoprak,806
+2,David Bekam,snacks,2022-04-10,Alpukat,966
+2,David Bekam,pagi,2022-04-11,Nasi Goreng,654
+2,David Bekam,siang,2022-04-11,Ikan Lele,608
+2,David Bekam,malam,2022-04-11,Ikan Lele,608
+2,David Bekam,snacks,2022-04-11,Apel,216
+2,David Bekam,pagi,2022-04-12,Cumi-Cumi,456
+2,David Bekam,siang,2022-04-12,Telor Dadar,497
+2,David Bekam,malam,2022-04-12,Ayam Panggang,551
+2,David Bekam,snacks,2022-04-12,Alpukat,966
+2,David Bekam,pagi,2022-04-13,Ikan Lele,608
+2,David Bekam,siang,2022-04-13,Ketoprak,806
+2,David Bekam,malam,2022-04-13,Sayur Asam,484
+2,David Bekam,snacks,2022-04-13,Anggur,9
+2,David Bekam,pagi,2022-04-14,Tongseng,721
+2,David Bekam,siang,2022-04-14,Soto Ayam,716
+2,David Bekam,malam,2022-04-14,Ikan Kembung,546
+2,David Bekam,snacks,2022-04-14,Mangga,321
+3,Paul Soleh,pagi,2022-04-08,Rawon,692
+3,Paul Soleh,siang,2022-04-08,Ketoprak,806
+3,Paul Soleh,malam,2022-04-08,Ketoprak,806
+3,Paul Soleh,snacks,2022-04-08,Pisang,315
+3,Paul Soleh,pagi,2022-04-09,Ketoprak,806
+3,Paul Soleh,siang,2022-04-09,Ketoprak,806
+3,Paul Soleh,malam,2022-04-09,Gudeg Yogya,710
+3,Paul Soleh,snacks,2022-04-09,Pepaya,165
+3,Paul Soleh,pagi,2022-04-10,Ayam Bakar,502
+3,Paul Soleh,siang,2022-04-10,Soto Daging,623
+3,Paul Soleh,malam,2022-04-10,Ayam Nugget,689
+3,Paul Soleh,snacks,2022-04-10,Alpukat,966
+3,Paul Soleh,pagi,2022-04-11,Ikan Kembung,546
+3,Paul Soleh,siang,2022-04-11,Pempek Palembang,638
+3,Paul Soleh,malam,2022-04-11,Sayur Asam,484
+3,Paul Soleh,snacks,2022-04-11,Apel,216
+3,Paul Soleh,pagi,2022-04-12,Mie Goreng Instan,754
+3,Paul Soleh,siang,2022-04-12,Tongseng,721
+3,Paul Soleh,malam,2022-04-12,Ayam Bakar,502
+3,Paul Soleh,snacks,2022-04-12,Alpukat,966
+3,Paul Soleh,pagi,2022-04-13,Nasi Goreng,654
+3,Paul Soleh,siang,2022-04-13,Pempek Palembang,638
+3,Paul Soleh,malam,2022-04-13,Kentang Goreng,596
+3,Paul Soleh,snacks,2022-04-13,Apel,216
+3,Paul Soleh,pagi,2022-04-14,Bubur Ayam,776
+3,Paul Soleh,siang,2022-04-14,Tongseng,721
+3,Paul Soleh,malam,2022-04-14,Ayam Goreng,616
+3,Paul Soleh,snacks,2022-04-14,Jeruk,186
+4,Wayne Rini,pagi,2022-04-08,Bubur Ayam,776
+4,Wayne Rini,siang,2022-04-08,Kentang Goreng,596
+4,Wayne Rini,malam,2022-04-08,Ayam Bakar,502
+4,Wayne Rini,snacks,2022-04-08,Apel,216
+4,Wayne Rini,pagi,2022-04-09,Telor Dadar,497
+4,Wayne Rini,siang,2022-04-09,Ayam Bakar,502
+4,Wayne Rini,malam,2022-04-09,Ikan Kembung,546
+4,Wayne Rini,snacks,2022-04-09,Jeruk,186
+4,Wayne Rini,pagi,2022-04-10,Bakso Mie Bakso,792
+4,Wayne Rini,siang,2022-04-10,Mie Goreng Instan,754
+4,Wayne Rini,malam,2022-04-10,Siomay,507
+4,Wayne Rini,snacks,2022-04-10,Alpukat,966
+4,Wayne Rini,pagi,2022-04-11,Tongseng,721
+4,Wayne Rini,siang,2022-04-11,Susu,526
+4,Wayne Rini,malam,2022-04-11,Bakso Mie Bakso,792
+4,Wayne Rini,snacks,2022-04-11,Pisang,315
+4,Wayne Rini,pagi,2022-04-12,Ikan Kembung,546
+4,Wayne Rini,siang,2022-04-12,Ikan Kembung,546
+4,Wayne Rini,malam,2022-04-12,Udang,526
+4,Wayne Rini,snacks,2022-04-12,Alpukat,966
+4,Wayne Rini,pagi,2022-04-13,Pempek Palembang,638
+4,Wayne Rini,siang,2022-04-13,Susu,526
+4,Wayne Rini,malam,2022-04-13,Soto Padang,1011
+4,Wayne Rini,snacks,2022-04-13,Jeruk,186
+4,Wayne Rini,pagi,2022-04-14,Soto Padang,1011
+4,Wayne Rini,siang,2022-04-14,Ikan Lele,608
+4,Wayne Rini,malam,2022-04-14,Pempek Palembang,638
+4,Wayne Rini,snacks,2022-04-14,Anggur,9
+5,Ririn Giggs,pagi,2022-04-08,Udang,526
+5,Ririn Giggs,siang,2022-04-08,Ikan Kembung,546
+5,Ririn Giggs,malam,2022-04-08,Cumi-Cumi,456
+5,Ririn Giggs,snacks,2022-04-08,Anggur,9
+5,Ririn Giggs,pagi,2022-04-09,Sate Ayam,744
+5,Ririn Giggs,siang,2022-04-09,Rawon,692
+5,Ririn Giggs,malam,2022-04-09,Ayam Panggang,551
+5,Ririn Giggs,snacks,2022-04-09,Anggur,9
+5,Ririn Giggs,pagi,2022-04-10,Ayam Panggang,551
+5,Ririn Giggs,siang,2022-04-10,Sate Padang,644
+5,Ririn Giggs,malam,2022-04-10,Ayam Nugget,689
+5,Ririn Giggs,snacks,2022-04-10,Pisang,315
+5,Ririn Giggs,pagi,2022-04-11,Pempek Palembang,638
+5,Ririn Giggs,siang,2022-04-11,Soto Padang,1011
+5,Ririn Giggs,malam,2022-04-11,Sate Ayam,744
+5,Ririn Giggs,snacks,2022-04-11,Pepaya,165
+5,Ririn Giggs,pagi,2022-04-12,Siomay,507
+5,Ririn Giggs,siang,2022-04-12,Ayam Panggang,551
+5,Ririn Giggs,malam,2022-04-12,Kentang Goreng,596
+5,Ririn Giggs,snacks,2022-04-12,Mangga,321
+5,Ririn Giggs,pagi,2022-04-13,Ayam Goreng,616
+5,Ririn Giggs,siang,2022-04-13,Sup Ayam,479
+5,Ririn Giggs,malam,2022-04-13,Rawon,692
+5,Ririn Giggs,snacks,2022-04-13,Alpukat,966
+5,Ririn Giggs,pagi,2022-04-14,Soto Daging,623
+5,Ririn Giggs,siang,2022-04-14,Bakso Mie Bakso,792
+5,Ririn Giggs,malam,2022-04-14,Cumi-Cumi,456
+5,Ririn Giggs,snacks,2022-04-14,Mangga,321
+1,Krisno Ronaldo,pagi,2022-04-15,Tongseng,721
+1,Krisno Ronaldo,siang,2022-04-15,Soto Ayam,716
+1,Krisno Ronaldo,malam,2022-04-15,Sup Ayam,479
+1,Krisno Ronaldo,snacks,2022-04-15,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-16,Sup Ayam,479
+1,Krisno Ronaldo,siang,2022-04-16,Sate Ayam,744
+1,Krisno Ronaldo,malam,2022-04-16,Sup Ayam,479
+1,Krisno Ronaldo,snacks,2022-04-16,Alpukat,966
+1,Krisno Ronaldo,pagi,2022-04-17,Ayam Nugget,689
+1,Krisno Ronaldo,siang,2022-04-17,Ketoprak,806
+1,Krisno Ronaldo,malam,2022-04-17,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-17,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-18,Ayam Goreng,616
+1,Krisno Ronaldo,siang,2022-04-18,Ikan Lele,608
+1,Krisno Ronaldo,malam,2022-04-18,Ayam Bakar,502
+1,Krisno Ronaldo,snacks,2022-04-18,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-19,Ikan Lele,608
+1,Krisno Ronaldo,siang,2022-04-19,Sate Padang,644
+1,Krisno Ronaldo,malam,2022-04-19,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-19,Alpukat,966
+1,Krisno Ronaldo,pagi,2022-04-20,Kentang Goreng,596
+1,Krisno Ronaldo,siang,2022-04-20,Sup Ayam,479
+1,Krisno Ronaldo,malam,2022-04-20,Ayam Nugget,689
+1,Krisno Ronaldo,snacks,2022-04-20,Apel,216
+1,Krisno Ronaldo,pagi,2022-04-21,Mie Goreng Instan,754
+1,Krisno Ronaldo,siang,2022-04-21,Soto Daging,623
+1,Krisno Ronaldo,malam,2022-04-21,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-21,Pepaya,165
+2,David Bekam,pagi,2022-04-15,Ikan Kembung,546
+2,David Bekam,siang,2022-04-15,Udang,526
+2,David Bekam,malam,2022-04-15,Soto Makassar,693
+2,David Bekam,snacks,2022-04-15,Jeruk,186
+2,David Bekam,pagi,2022-04-16,Sup Ayam,479
+2,David Bekam,siang,2022-04-16,Ikan Lele,608
+2,David Bekam,malam,2022-04-16,Susu,526
+2,David Bekam,snacks,2022-04-16,Alpukat,966
+2,David Bekam,pagi,2022-04-17,Sayur Asam,484
+2,David Bekam,siang,2022-04-17,Ikan Kembung,546
+2,David Bekam,malam,2022-04-17,Ketoprak,806
+2,David Bekam,snacks,2022-04-17,Alpukat,966
+2,David Bekam,pagi,2022-04-18,Nasi Goreng,654
+2,David Bekam,siang,2022-04-18,Ikan Lele,608
+2,David Bekam,malam,2022-04-18,Ikan Lele,608
+2,David Bekam,snacks,2022-04-18,Apel,216
+2,David Bekam,pagi,2022-04-19,Cumi-Cumi,456
+2,David Bekam,siang,2022-04-19,Telor Dadar,497
+2,David Bekam,malam,2022-04-19,Ayam Panggang,551
+2,David Bekam,snacks,2022-04-19,Alpukat,966
+2,David Bekam,pagi,2022-04-20,Ikan Lele,608
+2,David Bekam,siang,2022-04-20,Ketoprak,806
+2,David Bekam,malam,2022-04-20,Sayur Asam,484
+2,David Bekam,snacks,2022-04-20,Anggur,9
+2,David Bekam,pagi,2022-04-21,Tongseng,721
+2,David Bekam,siang,2022-04-21,Soto Ayam,716
+2,David Bekam,malam,2022-04-21,Ikan Kembung,546
+2,David Bekam,snacks,2022-04-21,Mangga,321
+3,Paul Soleh,pagi,2022-04-15,Rawon,692
+3,Paul Soleh,siang,2022-04-15,Ketoprak,806
+3,Paul Soleh,malam,2022-04-15,Ketoprak,806
+3,Paul Soleh,snacks,2022-04-15,Pisang,315
+3,Paul Soleh,pagi,2022-04-16,Ketoprak,806
+3,Paul Soleh,siang,2022-04-16,Ketoprak,806
+3,Paul Soleh,malam,2022-04-16,Gudeg Yogya,710
+3,Paul Soleh,snacks,2022-04-16,Pepaya,165
+3,Paul Soleh,pagi,2022-04-17,Ayam Bakar,502
+3,Paul Soleh,siang,2022-04-17,Soto Daging,623
+3,Paul Soleh,malam,2022-04-17,Ayam Nugget,689
+3,Paul Soleh,snacks,2022-04-17,Alpukat,966
+3,Paul Soleh,pagi,2022-04-18,Ikan Kembung,546
+3,Paul Soleh,siang,2022-04-18,Pempek Palembang,638
+3,Paul Soleh,malam,2022-04-18,Sayur Asam,484
+3,Paul Soleh,snacks,2022-04-18,Apel,216
+3,Paul Soleh,pagi,2022-04-19,Mie Goreng Instan,754
+3,Paul Soleh,siang,2022-04-19,Tongseng,721
+3,Paul Soleh,malam,2022-04-19,Ayam Bakar,502
+3,Paul Soleh,snacks,2022-04-19,Alpukat,966
+3,Paul Soleh,pagi,2022-04-20,Nasi Goreng,654
+3,Paul Soleh,siang,2022-04-20,Pempek Palembang,638
+3,Paul Soleh,malam,2022-04-20,Kentang Goreng,596
+3,Paul Soleh,snacks,2022-04-20,Apel,216
+3,Paul Soleh,pagi,2022-04-21,Bubur Ayam,776
+3,Paul Soleh,siang,2022-04-21,Tongseng,721
+3,Paul Soleh,malam,2022-04-21,Ayam Goreng,616
+3,Paul Soleh,snacks,2022-04-21,Jeruk,186
+4,Wayne Rini,pagi,2022-04-15,Bubur Ayam,776
+4,Wayne Rini,siang,2022-04-15,Kentang Goreng,596
+4,Wayne Rini,malam,2022-04-15,Ayam Bakar,502
+4,Wayne Rini,snacks,2022-04-15,Apel,216
+4,Wayne Rini,pagi,2022-04-16,Telor Dadar,497
+4,Wayne Rini,siang,2022-04-16,Ayam Bakar,502
+4,Wayne Rini,malam,2022-04-16,Ikan Kembung,546
+4,Wayne Rini,snacks,2022-04-16,Jeruk,186
+4,Wayne Rini,pagi,2022-04-17,Bakso Mie Bakso,792
+4,Wayne Rini,siang,2022-04-17,Mie Goreng Instan,754
+4,Wayne Rini,malam,2022-04-17,Siomay,507
+4,Wayne Rini,snacks,2022-04-17,Alpukat,966
+4,Wayne Rini,pagi,2022-04-18,Tongseng,721
+4,Wayne Rini,siang,2022-04-18,Susu,526
+4,Wayne Rini,malam,2022-04-18,Bakso Mie Bakso,792
+4,Wayne Rini,snacks,2022-04-18,Pisang,315
+4,Wayne Rini,pagi,2022-04-19,Ikan Kembung,546
+4,Wayne Rini,siang,2022-04-19,Ikan Kembung,546
+4,Wayne Rini,malam,2022-04-19,Udang,526
+4,Wayne Rini,snacks,2022-04-19,Alpukat,966
+4,Wayne Rini,pagi,2022-04-20,Pempek Palembang,638
+4,Wayne Rini,siang,2022-04-20,Susu,526
+4,Wayne Rini,malam,2022-04-20,Soto Padang,1011
+4,Wayne Rini,snacks,2022-04-20,Jeruk,186
+4,Wayne Rini,pagi,2022-04-21,Soto Padang,1011
+4,Wayne Rini,siang,2022-04-21,Ikan Lele,608
+4,Wayne Rini,malam,2022-04-21,Pempek Palembang,638
+4,Wayne Rini,snacks,2022-04-21,Anggur,9
+5,Ririn Giggs,pagi,2022-04-15,Udang,526
+5,Ririn Giggs,siang,2022-04-15,Ikan Kembung,546
+5,Ririn Giggs,malam,2022-04-15,Cumi-Cumi,456
+5,Ririn Giggs,snacks,2022-04-15,Anggur,9
+5,Ririn Giggs,pagi,2022-04-16,Sate Ayam,744
+5,Ririn Giggs,siang,2022-04-16,Rawon,692
+5,Ririn Giggs,malam,2022-04-16,Ayam Panggang,551
+5,Ririn Giggs,snacks,2022-04-16,Anggur,9
+5,Ririn Giggs,pagi,2022-04-17,Ayam Panggang,551
+5,Ririn Giggs,siang,2022-04-17,Sate Padang,644
+5,Ririn Giggs,malam,2022-04-17,Ayam Nugget,689
+5,Ririn Giggs,snacks,2022-04-17,Pisang,315
+5,Ririn Giggs,pagi,2022-04-18,Pempek Palembang,638
+5,Ririn Giggs,siang,2022-04-18,Soto Padang,1011
+5,Ririn Giggs,malam,2022-04-18,Sate Ayam,744
+5,Ririn Giggs,snacks,2022-04-18,Pepaya,165
+5,Ririn Giggs,pagi,2022-04-19,Siomay,507
+5,Ririn Giggs,siang,2022-04-19,Ayam Panggang,551
+5,Ririn Giggs,malam,2022-04-19,Kentang Goreng,596
+5,Ririn Giggs,snacks,2022-04-19,Mangga,321
+5,Ririn Giggs,pagi,2022-04-20,Ayam Goreng,616
+5,Ririn Giggs,siang,2022-04-20,Sup Ayam,479
+5,Ririn Giggs,malam,2022-04-20,Rawon,692
+5,Ririn Giggs,snacks,2022-04-20,Alpukat,966
+5,Ririn Giggs,pagi,2022-04-21,Soto Daging,623
+5,Ririn Giggs,siang,2022-04-21,Bakso Mie Bakso,792
+5,Ririn Giggs,malam,2022-04-21,Cumi-Cumi,456
+5,Ririn Giggs,snacks,2022-04-21,Mangga,321
+1,Krisno Ronaldo,pagi,2022-04-22,Tongseng,721
+1,Krisno Ronaldo,siang,2022-04-22,Soto Ayam,716
+1,Krisno Ronaldo,malam,2022-04-22,Sup Ayam,479
+1,Krisno Ronaldo,snacks,2022-04-22,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-23,Sup Ayam,479
+1,Krisno Ronaldo,siang,2022-04-23,Sate Ayam,744
+1,Krisno Ronaldo,malam,2022-04-23,Sup Ayam,479
+1,Krisno Ronaldo,snacks,2022-04-23,Alpukat,966
+1,Krisno Ronaldo,pagi,2022-04-24,Ayam Nugget,689
+1,Krisno Ronaldo,siang,2022-04-24,Ketoprak,806
+1,Krisno Ronaldo,malam,2022-04-24,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-24,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-25,Ayam Goreng,616
+1,Krisno Ronaldo,siang,2022-04-25,Ikan Lele,608
+1,Krisno Ronaldo,malam,2022-04-25,Ayam Bakar,502
+1,Krisno Ronaldo,snacks,2022-04-25,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-26,Ikan Lele,608
+1,Krisno Ronaldo,siang,2022-04-26,Sate Padang,644
+1,Krisno Ronaldo,malam,2022-04-26,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-26,Alpukat,966
+1,Krisno Ronaldo,pagi,2022-04-27,Kentang Goreng,596
+1,Krisno Ronaldo,siang,2022-04-27,Sup Ayam,479
+1,Krisno Ronaldo,malam,2022-04-27,Ayam Nugget,689
+1,Krisno Ronaldo,snacks,2022-04-27,Apel,216
+1,Krisno Ronaldo,pagi,2022-04-28,Mie Goreng Instan,754
+1,Krisno Ronaldo,siang,2022-04-28,Soto Daging,623
+1,Krisno Ronaldo,malam,2022-04-28,Soto Ayam,716
+1,Krisno Ronaldo,snacks,2022-04-28,Pepaya,165
+2,David Bekam,pagi,2022-04-22,Ikan Kembung,546
+2,David Bekam,siang,2022-04-22,Udang,526
+2,David Bekam,malam,2022-04-22,Soto Makassar,693
+2,David Bekam,snacks,2022-04-22,Jeruk,186
+2,David Bekam,pagi,2022-04-23,Sup Ayam,479
+2,David Bekam,siang,2022-04-23,Ikan Lele,608
+2,David Bekam,malam,2022-04-23,Susu,526
+2,David Bekam,snacks,2022-04-23,Alpukat,966
+2,David Bekam,pagi,2022-04-24,Sayur Asam,484
+2,David Bekam,siang,2022-04-24,Ikan Kembung,546
+2,David Bekam,malam,2022-04-24,Ketoprak,806
+2,David Bekam,snacks,2022-04-24,Alpukat,966
+2,David Bekam,pagi,2022-04-25,Nasi Goreng,654
+2,David Bekam,siang,2022-04-25,Ikan Lele,608
+2,David Bekam,malam,2022-04-25,Ikan Lele,608
+2,David Bekam,snacks,2022-04-25,Apel,216
+2,David Bekam,pagi,2022-04-26,Cumi-Cumi,456
+2,David Bekam,siang,2022-04-26,Telor Dadar,497
+2,David Bekam,malam,2022-04-26,Ayam Panggang,551
+2,David Bekam,snacks,2022-04-26,Alpukat,966
+2,David Bekam,pagi,2022-04-27,Ikan Lele,608
+2,David Bekam,siang,2022-04-27,Ketoprak,806
+2,David Bekam,malam,2022-04-27,Sayur Asam,484
+2,David Bekam,snacks,2022-04-27,Anggur,9
+2,David Bekam,pagi,2022-04-28,Tongseng,721
+2,David Bekam,siang,2022-04-28,Soto Ayam,716
+2,David Bekam,malam,2022-04-28,Ikan Kembung,546
+2,David Bekam,snacks,2022-04-28,Mangga,321
+3,Paul Soleh,pagi,2022-04-22,Rawon,692
+3,Paul Soleh,siang,2022-04-22,Ketoprak,806
+3,Paul Soleh,malam,2022-04-22,Ketoprak,806
+3,Paul Soleh,snacks,2022-04-22,Pisang,315
+3,Paul Soleh,pagi,2022-04-23,Ketoprak,806
+3,Paul Soleh,siang,2022-04-23,Ketoprak,806
+3,Paul Soleh,malam,2022-04-23,Gudeg Yogya,710
+3,Paul Soleh,snacks,2022-04-23,Pepaya,165
+3,Paul Soleh,pagi,2022-04-24,Ayam Bakar,502
+3,Paul Soleh,siang,2022-04-24,Soto Daging,623
+3,Paul Soleh,malam,2022-04-24,Ayam Nugget,689
+3,Paul Soleh,snacks,2022-04-24,Alpukat,966
+3,Paul Soleh,pagi,2022-04-25,Ikan Kembung,546
+3,Paul Soleh,siang,2022-04-25,Pempek Palembang,638
+3,Paul Soleh,malam,2022-04-25,Sayur Asam,484
+3,Paul Soleh,snacks,2022-04-25,Apel,216
+3,Paul Soleh,pagi,2022-04-26,Mie Goreng Instan,754
+3,Paul Soleh,siang,2022-04-26,Tongseng,721
+3,Paul Soleh,malam,2022-04-26,Ayam Bakar,502
+3,Paul Soleh,snacks,2022-04-26,Alpukat,966
+3,Paul Soleh,pagi,2022-04-27,Nasi Goreng,654
+3,Paul Soleh,siang,2022-04-27,Pempek Palembang,638
+3,Paul Soleh,malam,2022-04-27,Kentang Goreng,596
+3,Paul Soleh,snacks,2022-04-27,Apel,216
+3,Paul Soleh,pagi,2022-04-28,Bubur Ayam,776
+3,Paul Soleh,siang,2022-04-28,Tongseng,721
+3,Paul Soleh,malam,2022-04-28,Ayam Goreng,616
+3,Paul Soleh,snacks,2022-04-28,Jeruk,186
+4,Wayne Rini,pagi,2022-04-22,Bubur Ayam,776
+4,Wayne Rini,siang,2022-04-22,Kentang Goreng,596
+4,Wayne Rini,malam,2022-04-22,Ayam Bakar,502
+4,Wayne Rini,snacks,2022-04-22,Apel,216
+4,Wayne Rini,pagi,2022-04-23,Telor Dadar,497
+4,Wayne Rini,siang,2022-04-23,Ayam Bakar,502
+4,Wayne Rini,malam,2022-04-23,Ikan Kembung,546
+4,Wayne Rini,snacks,2022-04-23,Jeruk,186
+4,Wayne Rini,pagi,2022-04-24,Bakso Mie Bakso,792
+4,Wayne Rini,siang,2022-04-24,Mie Goreng Instan,754
+4,Wayne Rini,malam,2022-04-24,Siomay,507
+4,Wayne Rini,snacks,2022-04-24,Alpukat,966
+4,Wayne Rini,pagi,2022-04-25,Tongseng,721
+4,Wayne Rini,siang,2022-04-25,Susu,526
+4,Wayne Rini,malam,2022-04-25,Bakso Mie Bakso,792
+4,Wayne Rini,snacks,2022-04-25,Pisang,315
+4,Wayne Rini,pagi,2022-04-26,Ikan Kembung,546
+4,Wayne Rini,siang,2022-04-26,Ikan Kembung,546
+4,Wayne Rini,malam,2022-04-26,Udang,526
+4,Wayne Rini,snacks,2022-04-26,Alpukat,966
+4,Wayne Rini,pagi,2022-04-27,Pempek Palembang,638
+4,Wayne Rini,siang,2022-04-27,Susu,526
+4,Wayne Rini,malam,2022-04-27,Soto Padang,1011
+4,Wayne Rini,snacks,2022-04-27,Jeruk,186
+4,Wayne Rini,pagi,2022-04-28,Soto Padang,1011
+4,Wayne Rini,siang,2022-04-28,Ikan Lele,608
+4,Wayne Rini,malam,2022-04-28,Pempek Palembang,638
+4,Wayne Rini,snacks,2022-04-28,Anggur,9
+5,Ririn Giggs,pagi,2022-04-22,Udang,526
+5,Ririn Giggs,siang,2022-04-22,Ikan Kembung,546
+5,Ririn Giggs,malam,2022-04-22,Cumi-Cumi,456
+5,Ririn Giggs,snacks,2022-04-22,Anggur,9
+5,Ririn Giggs,pagi,2022-04-23,Sate Ayam,744
+5,Ririn Giggs,siang,2022-04-23,Rawon,692
+5,Ririn Giggs,malam,2022-04-23,Ayam Panggang,551
+5,Ririn Giggs,snacks,2022-04-23,Anggur,9
+5,Ririn Giggs,pagi,2022-04-24,Ayam Panggang,551
+5,Ririn Giggs,siang,2022-04-24,Sate Padang,644
+5,Ririn Giggs,malam,2022-04-24,Ayam Nugget,689
+5,Ririn Giggs,snacks,2022-04-24,Pisang,315
+5,Ririn Giggs,pagi,2022-04-25,Pempek Palembang,638
+5,Ririn Giggs,siang,2022-04-25,Soto Padang,1011
+5,Ririn Giggs,malam,2022-04-25,Sate Ayam,744
+5,Ririn Giggs,snacks,2022-04-25,Pepaya,165
+5,Ririn Giggs,pagi,2022-04-26,Siomay,507
+5,Ririn Giggs,siang,2022-04-26,Ayam Panggang,551
+5,Ririn Giggs,malam,2022-04-26,Kentang Goreng,596
+5,Ririn Giggs,snacks,2022-04-26,Mangga,321
+5,Ririn Giggs,pagi,2022-04-27,Ayam Goreng,616
+5,Ririn Giggs,siang,2022-04-27,Sup Ayam,479
+5,Ririn Giggs,malam,2022-04-27,Rawon,692
+5,Ririn Giggs,snacks,2022-04-27,Alpukat,966
+5,Ririn Giggs,pagi,2022-04-28,Soto Daging,623
+5,Ririn Giggs,siang,2022-04-28,Bakso Mie Bakso,792
+5,Ririn Giggs,malam,2022-04-28,Cumi-Cumi,456
+5,Ririn Giggs,snacks,2022-04-28,Mangga,321
+1,Krisno Ronaldo,pagi,2022-04-29,Tongseng,721
+1,Krisno Ronaldo,siang,2022-04-29,Soto Ayam,716
+1,Krisno Ronaldo,malam,2022-04-29,Sup Ayam,479
+1,Krisno Ronaldo,snacks,2022-04-29,Anggur,9
+1,Krisno Ronaldo,pagi,2022-04-30,Sup Ayam,479
+1,Krisno Ronaldo,siang,2022-04-30,Sate Ayam,744
+1,Krisno Ronaldo,malam,2022-04-30,Sup Ayam,479
+1,Krisno Ronaldo,snacks,2022-04-30,Alpukat,966
+2,David Bekam,pagi,2022-04-29,Ikan Kembung,546
+2,David Bekam,siang,2022-04-29,Udang,526
+2,David Bekam,malam,2022-04-29,Soto Makassar,693
+2,David Bekam,snacks,2022-04-29,Jeruk,186
+2,David Bekam,pagi,2022-04-30,Sup Ayam,479
+2,David Bekam,siang,2022-04-30,Ikan Lele,608
+2,David Bekam,malam,2022-04-30,Susu,526
+2,David Bekam,snacks,2022-04-30,Alpukat,966
+3,Paul Soleh,pagi,2022-04-29,Rawon,692
+3,Paul Soleh,siang,2022-04-29,Ketoprak,806
+3,Paul Soleh,malam,2022-04-29,Ketoprak,806
+3,Paul Soleh,snacks,2022-04-29,Pisang,315
+3,Paul Soleh,pagi,2022-04-30,Ketoprak,806
+3,Paul Soleh,siang,2022-04-30,Ketoprak,806
+3,Paul Soleh,malam,2022-04-30,Gudeg Yogya,710
+3,Paul Soleh,snacks,2022-04-30,Pepaya,165
+4,Wayne Rini,pagi,2022-04-29,Bubur Ayam,776
+4,Wayne Rini,siang,2022-04-29,Kentang Goreng,596
+4,Wayne Rini,malam,2022-04-29,Ayam Bakar,502
+4,Wayne Rini,snacks,2022-04-29,Apel,216
+4,Wayne Rini,pagi,2022-04-30,Telor Dadar,497
+4,Wayne Rini,siang,2022-04-30,Ayam Bakar,502
+4,Wayne Rini,malam,2022-04-30,Ikan Kembung,546
+4,Wayne Rini,snacks,2022-04-30,Jeruk,186
+5,Ririn Giggs,pagi,2022-04-29,Udang,526
+5,Ririn Giggs,siang,2022-04-29,Ikan Kembung,546
+5,Ririn Giggs,malam,2022-04-29,Cumi-Cumi,456
+5,Ririn Giggs,snacks,2022-04-29,Anggur,9
+5,Ririn Giggs,pagi,2022-04-30,Sate Ayam,744
+5,Ririn Giggs,siang,2022-04-30,Rawon,692
+5,Ririn Giggs,malam,2022-04-30,Ayam Panggang,551
+5,Ririn Giggs,snacks,2022-04-30,Anggur,9

@@ -1,0 +1,151 @@
+﻿Idp,name,username,date,heartpoin,step,calorie,sleep,cycling,exercise,sport,score,coin
+1,Krisno Ronaldo,ronaldo,2022-04-01,120,9010,2891,493,60,60,Basketball, 1.18 ,0.0018
+1,Krisno Ronaldo,ronaldo,2022-04-02,140,8990,3220,495,65,75,MixedCardio, 1.23 ,0.0023
+1,Krisno Ronaldo,ronaldo,2022-04-03,120,9902,3001,494,55,65,Basketball, 1.19 ,0.0019
+1,Krisno Ronaldo,ronaldo,2022-04-04,128,9005,3224,488,58,70,Crossfit, 1.18 ,0.0018
+1,Krisno Ronaldo,ronaldo,2022-04-05,132,8987,3197,489,60,72,Boxing, 1.20 ,0.0020
+1,Krisno Ronaldo,ronaldo,2022-04-06,131,10020,2749,487,63,68,Boxing, 1.27 ,0.0027
+1,Krisno Ronaldo,ronaldo,2022-04-07,125,9658,3228,498,60,65,Hiit Cardio, 1.18 ,0.0018
+1,Krisno Ronaldo,ronaldo,2022-04-08,126,9236,3070,491,59,67,MixedCardio, 1.19 ,0.0019
+1,Krisno Ronaldo,ronaldo,2022-04-09,119,9490,2942,489,57,62,Hiking, 1.18 ,0.0018
+1,Krisno Ronaldo,ronaldo,2022-04-10,132,9388,2892,490,57,75,Core, 1.24 ,0.0024
+1,Krisno Ronaldo,ronaldo,2022-04-11,117,9820,2836,488,57,60,Hiking, 1.20 ,0.0020
+1,Krisno Ronaldo,ronaldo,2022-04-12,128,9525,2815,498,61,67,Boxing, 1.23 ,0.0023
+1,Krisno Ronaldo,ronaldo,2022-04-13,129,9551,3029,493,59,70,Hiking, 1.22 ,0.0022
+1,Krisno Ronaldo,ronaldo,2022-04-14,132,9054,2993,487,64,68,Core, 1.22 ,0.0022
+1,Krisno Ronaldo,ronaldo,2022-04-15,124,9906,2758,490,55,69,Core, 1.23 ,0.0023
+1,Krisno Ronaldo,ronaldo,2022-04-16,126,9790,3219,498,60,66,Hiit Cardio, 1.19 ,0.0019
+1,Krisno Ronaldo,ronaldo,2022-04-17,135,9471,2994,488,65,70,MixedCardio, 1.25 ,0.0025
+1,Krisno Ronaldo,ronaldo,2022-04-18,128,9410,3186,488,61,67,Hiking, 1.20 ,0.0020
+1,Krisno Ronaldo,ronaldo,2022-04-19,121,9485,2990,497,57,64,Hiking, 1.18 ,0.0018
+1,Krisno Ronaldo,ronaldo,2022-04-20,126,9079,2883,497,63,63,Hiking, 1.20 ,0.0020
+1,Krisno Ronaldo,ronaldo,2022-04-21,127,9396,2769,498,59,68,MixedCardio, 1.23 ,0.0023
+1,Krisno Ronaldo,ronaldo,2022-04-22,137,9337,2834,498,64,73,Other, 1.26 ,0.0026
+1,Krisno Ronaldo,ronaldo,2022-04-23,127,9186,3102,488,57,70,Other, 1.19 ,0.0019
+1,Krisno Ronaldo,ronaldo,2022-04-24,129,9802,2778,490,60,69,Core, 1.25 ,0.0025
+1,Krisno Ronaldo,ronaldo,2022-04-25,128,9169,2951,487,64,64,Hiit Cardio, 1.21 ,0.0021
+1,Krisno Ronaldo,ronaldo,2022-04-26,134,9944,3076,496,61,73,Basketball, 1.24 ,0.0024
+1,Krisno Ronaldo,ronaldo,2022-04-27,118,9883,3193,489,56,62,Football, 1.16 ,0.0016
+1,Krisno Ronaldo,ronaldo,2022-04-28,125,9327,3037,491,57,68,Boxing, 1.19 ,0.0019
+1,Krisno Ronaldo,ronaldo,2022-04-29,134,9400,3135,490,63,71,Crossfit, 1.22 ,0.0022
+1,Krisno Ronaldo,ronaldo,2022-04-30,126,9870,2780,495,63,63,Boxing, 1.24 ,0.0024
+2,David Bekam,david,2022-04-01,127,5670,2621,496,59,68,Football, 1.15 ,0.0015
+2,David Bekam,david,2022-04-02,129,5342,2636,490,65,64,Other, 1.15 ,0.0015
+2,David Bekam,david,2022-04-03,123,4987,2276,489,63,60,Hiit Cardio, 1.15 ,0.0015
+2,David Bekam,david,2022-04-04,132,5214,2484,489,59,73,Football, 1.18 ,0.0018
+2,David Bekam,david,2022-04-05,127,5178,2617,487,64,63,Crossfit, 1.14 ,0.0014
+2,David Bekam,david,2022-04-06,128,5243,2502,493,59,69,Football, 1.16 ,0.0016
+2,David Bekam,david,2022-04-07,126,5098,2516,494,58,68,MixedCardio, 1.14 ,0.0014
+2,David Bekam,david,2022-04-08,120,5644,2542,488,58,62,Hiit Cardio, 1.13 ,0.0013
+2,David Bekam,david,2022-04-09,124,5530,2294,489,63,61,MixedCardio, 1.17 ,0.0017
+2,David Bekam,david,2022-04-10,129,5665,2458,495,60,69,Crossfit, 1.18 ,0.0018
+2,David Bekam,david,2022-04-11,135,5431,2495,492,63,72,Hiit Cardio, 1.19 ,0.0019
+2,David Bekam,david,2022-04-12,132,5438,2368,494,63,69,Basketball, 1.19 ,0.0019
+2,David Bekam,david,2022-04-13,134,5378,2463,492,65,69,Core, 1.19 ,0.0019
+2,David Bekam,david,2022-04-14,126,5552,2360,496,64,62,Hiking, 1.17 ,0.0017
+2,David Bekam,david,2022-04-15,130,5198,2430,488,63,67,Hiking, 1.17 ,0.0017
+2,David Bekam,david,2022-04-16,136,5431,2483,489,63,73,MixedCardio, 1.20 ,0.0020
+2,David Bekam,david,2022-04-17,133,5191,2388,493,60,73,Core, 1.19 ,0.0019
+2,David Bekam,david,2022-04-18,127,5544,2417,496,65,62,Other, 1.17 ,0.0017
+2,David Bekam,david,2022-04-19,135,5471,2313,488,64,71,Basketball, 1.21 ,0.0021
+2,David Bekam,david,2022-04-20,126,5537,2362,489,60,66,Hiit Cardio, 1.17 ,0.0017
+2,David Bekam,david,2022-04-21,130,5466,2557,487,63,67,Basketball, 1.17 ,0.0017
+2,David Bekam,david,2022-04-22,127,5566,2428,495,58,69,Hiit Cardio, 1.17 ,0.0017
+2,David Bekam,david,2022-04-23,129,5182,2554,488,59,70,Other, 1.16 ,0.0016
+2,David Bekam,david,2022-04-24,138,5557,2434,487,65,73,Hiit Cardio, 1.22 ,0.0022
+2,David Bekam,david,2022-04-25,129,5001,2544,491,65,64,Other, 1.15 ,0.0015
+2,David Bekam,david,2022-04-26,125,5575,2511,489,62,63,Crossfit, 1.15 ,0.0015
+2,David Bekam,david,2022-04-27,122,5460,2584,487,60,62,Core, 1.13 ,0.0013
+2,David Bekam,david,2022-04-28,134,5052,2400,494,64,70,Hiking, 1.19 ,0.0019
+2,David Bekam,david,2022-04-29,133,5341,2499,496,61,72,Hiit Cardio, 1.18 ,0.0018
+2,David Bekam,david,2022-04-30,136,5318,2364,491,63,73,Football, 1.21 ,0.0021
+3,Paul Soleh,paul,2022-04-01,45,3678,2001,326,30,15,Basketball, 0.91 ,0.0000
+3,Paul Soleh,paul,2022-04-02,35,3987,2040,323,25,10,Boxing, 0.87 ,0.0000
+3,Paul Soleh,paul,2022-04-03,38,3456,1725,317,26,12,Boxing, 0.91 ,0.0000
+3,Paul Soleh,paul,2022-04-04,39,3256,1680,319,28,11,Basketball, 0.91 ,0.0000
+3,Paul Soleh,paul,2022-04-05,35,3556,1703,332,25,10,MixedCardio, 0.89 ,0.0000
+3,Paul Soleh,paul,2022-04-06,35,3764,2027,338,20,15,Hiit Cardio, 0.86 ,0.0000
+3,Paul Soleh,paul,2022-04-07,44,3786,1733,338,30,14,Other, 0.93 ,0.0000
+3,Paul Soleh,paul,2022-04-08,41,3455,1915,322,27,14,Core, 0.90 ,0.0000
+3,Paul Soleh,paul,2022-04-09,39,3320,1876,338,29,10,Core, 0.88 ,0.0000
+3,Paul Soleh,paul,2022-04-10,39,3877,1979,326,28,11,Hiit Cardio, 0.89 ,0.0000
+3,Paul Soleh,paul,2022-04-11,41,3556,1947,319,26,15,Hiking, 0.90 ,0.0000
+3,Paul Soleh,paul,2022-04-12,34,3547,1913,325,20,14,Hiit Cardio, 0.87 ,0.0000
+3,Paul Soleh,paul,2022-04-13,43,3505,2013,328,30,13,Football, 0.89 ,0.0000
+3,Paul Soleh,paul,2022-04-14,32,3394,1725,334,22,10,Basketball, 0.87 ,0.0000
+3,Paul Soleh,paul,2022-04-15,39,3734,1877,327,26,13,Core, 0.90 ,0.0000
+3,Paul Soleh,paul,2022-04-16,34,3427,1837,321,22,12,Crossfit, 0.88 ,0.0000
+3,Paul Soleh,paul,2022-04-17,38,3769,1783,318,24,14,Crossfit, 0.91 ,0.0000
+3,Paul Soleh,paul,2022-04-18,36,3397,1772,319,24,12,Core, 0.89 ,0.0000
+3,Paul Soleh,paul,2022-04-19,33,3566,1931,332,21,12,MixedCardio, 0.86 ,0.0000
+3,Paul Soleh,paul,2022-04-20,41,3379,1726,334,27,14,Core, 0.91 ,0.0000
+3,Paul Soleh,paul,2022-04-21,36,3471,1714,328,21,15,Hiking, 0.89 ,0.0000
+3,Paul Soleh,paul,2022-04-22,34,3452,1717,327,20,14,Crossfit, 0.89 ,0.0000
+3,Paul Soleh,paul,2022-04-23,35,3767,2020,319,25,10,Other, 0.87 ,0.0000
+3,Paul Soleh,paul,2022-04-24,38,3790,1861,326,23,15,MixedCardio, 0.90 ,0.0000
+3,Paul Soleh,paul,2022-04-25,36,3582,1837,337,22,14,MixedCardio, 0.88 ,0.0000
+3,Paul Soleh,paul,2022-04-26,35,3364,1969,318,25,10,Crossfit, 0.87 ,0.0000
+3,Paul Soleh,paul,2022-04-27,36,3648,1730,337,26,10,Other, 0.89 ,0.0000
+3,Paul Soleh,paul,2022-04-28,40,3973,2011,325,26,14,Hiking, 0.90 ,0.0000
+3,Paul Soleh,paul,2022-04-29,35,3711,1957,337,20,15,Hiit Cardio, 0.87 ,0.0000
+3,Paul Soleh,paul,2022-04-30,36,3539,1747,325,25,11,Crossfit, 0.89 ,0.0000
+4,Wayne Rini,rini,2022-04-01,74,4987,2399,390,42,32,Football, 0.99 ,0.0000
+4,Wayne Rini,rini,2022-04-02,63,5068,2372,321,38,25,Other, 0.98 ,0.0000
+4,Wayne Rini,rini,2022-04-03,64,5436,2368,391,36,28,Core, 0.96 ,0.0000
+4,Wayne Rini,rini,2022-04-04,57,5246,2371,331,30,27,Boxing, 0.96 ,0.0000
+4,Wayne Rini,rini,2022-04-05,70,5542,2300,325,38,32,Basketball, 1.03 ,0.0003
+4,Wayne Rini,rini,2022-04-06,70,5098,2592,339,40,30,Other, 0.98 ,0.0000
+4,Wayne Rini,rini,2022-04-07,73,4897,2399,388,42,31,Basketball, 0.98 ,0.0000
+4,Wayne Rini,rini,2022-04-08,65,5066,2366,391,36,29,Football, 0.96 ,0.0000
+4,Wayne Rini,rini,2022-04-09,69,5018,2300,365,42,27,Other, 0.99 ,0.0000
+4,Wayne Rini,rini,2022-04-10,66,5019,2401,325,34,32,Core, 0.99 ,0.0000
+4,Wayne Rini,rini,2022-04-11,71,4993,2352,332,42,29,Football, 1.01 ,0.0001
+4,Wayne Rini,rini,2022-04-12,66,5206,2306,333,40,26,Boxing, 1.00 ,0.0000
+4,Wayne Rini,rini,2022-04-13,62,5531,2319,341,37,25,Boxing, 0.99 ,0.0000
+4,Wayne Rini,rini,2022-04-14,64,5282,2458,338,32,32,MixedCardio, 0.98 ,0.0000
+4,Wayne Rini,rini,2022-04-15,61,5200,2579,346,34,27,Basketball, 0.95 ,0.0000
+4,Wayne Rini,rini,2022-04-16,56,5326,2444,357,31,25,Crossfit, 0.94 ,0.0000
+4,Wayne Rini,rini,2022-04-17,69,5241,2509,350,38,31,Core, 0.99 ,0.0000
+4,Wayne Rini,rini,2022-04-18,66,5033,2587,325,41,25,Other, 0.97 ,0.0000
+4,Wayne Rini,rini,2022-04-19,64,5193,2557,367,39,25,Crossfit, 0.95 ,0.0000
+4,Wayne Rini,rini,2022-04-20,66,5174,2580,386,39,27,Hiking, 0.95 ,0.0000
+4,Wayne Rini,rini,2022-04-21,61,5222,2555,355,32,29,Boxing, 0.94 ,0.0000
+4,Wayne Rini,rini,2022-04-22,66,5042,2525,336,40,26,Football, 0.97 ,0.0000
+4,Wayne Rini,rini,2022-04-23,61,5412,2386,350,30,31,Hiking, 0.97 ,0.0000
+4,Wayne Rini,rini,2022-04-24,70,5370,2406,374,38,32,Core, 0.99 ,0.0000
+4,Wayne Rini,rini,2022-04-25,69,4944,2337,361,39,30,MixedCardio, 0.99 ,0.0000
+4,Wayne Rini,rini,2022-04-26,67,4933,2517,366,39,28,Hiit Cardio, 0.96 ,0.0000
+4,Wayne Rini,rini,2022-04-27,62,5206,2586,357,36,26,Boxing, 0.94 ,0.0000
+4,Wayne Rini,rini,2022-04-28,64,5454,2574,382,38,26,Boxing, 0.95 ,0.0000
+4,Wayne Rini,rini,2022-04-29,66,5318,2313,334,38,28,Hiit Cardio, 1.00 ,0.0000
+4,Wayne Rini,rini,2022-04-30,64,5067,2392,365,36,28,Crossfit, 0.96 ,0.0000
+5,Ririn Giggs,ririn,2022-04-01,25,2789,1671,271,20,5,Hiit Cardio, 0.87 ,0.0000
+5,Ririn Giggs,ririn,2022-04-02,21,2987,2071,305,15,6,Boxing, 0.80 ,0.0000
+5,Ririn Giggs,ririn,2022-04-03,21,2779,1873,285,17,4,Core, 0.82 ,0.0000
+5,Ririn Giggs,ririn,2022-04-04,32,3002,2137,312,25,7,MixedCardio, 0.83 ,0.0000
+5,Ririn Giggs,ririn,2022-04-05,27,2890,1910,328,22,5,Other, 0.82 ,0.0000
+5,Ririn Giggs,ririn,2022-04-06,29,2456,2060,318,23,6,Basketball, 0.81 ,0.0000
+5,Ririn Giggs,ririn,2022-04-07,26,2789,1985,300,21,5,MixedCardio, 0.82 ,0.0000
+5,Ririn Giggs,ririn,2022-04-08,29,2940,1849,295,24,5,MixedCardio, 0.86 ,0.0000
+5,Ririn Giggs,ririn,2022-04-09,26,2837,1898,277,21,5,Hiit Cardio, 0.85 ,0.0000
+5,Ririn Giggs,ririn,2022-04-10,25,2716,1839,303,18,7,Basketball, 0.83 ,0.0000
+5,Ririn Giggs,ririn,2022-04-11,29,2918,1785,284,22,7,Hiit Cardio, 0.87 ,0.0000
+5,Ririn Giggs,ririn,2022-04-12,29,2913,1897,325,24,5,Basketball, 0.83 ,0.0000
+5,Ririn Giggs,ririn,2022-04-13,26,2680,1768,298,22,4,Hiit Cardio, 0.84 ,0.0000
+5,Ririn Giggs,ririn,2022-04-14,31,2457,2041,316,24,7,MixedCardio, 0.82 ,0.0000
+5,Ririn Giggs,ririn,2022-04-15,30,2585,1979,291,24,6,MixedCardio, 0.84 ,0.0000
+5,Ririn Giggs,ririn,2022-04-16,27,2794,1733,282,22,5,Basketball, 0.86 ,0.0000
+5,Ririn Giggs,ririn,2022-04-17,32,2971,1958,324,25,7,Crossfit, 0.84 ,0.0000
+5,Ririn Giggs,ririn,2022-04-18,28,2801,1822,291,23,5,Hiit Cardio, 0.85 ,0.0000
+5,Ririn Giggs,ririn,2022-04-19,22,2891,1960,272,16,6,Hiit Cardio, 0.83 ,0.0000
+5,Ririn Giggs,ririn,2022-04-20,27,2654,1793,323,22,5,Hiking, 0.83 ,0.0000
+5,Ririn Giggs,ririn,2022-04-21,23,2864,2118,275,18,5,Football, 0.81 ,0.0000
+5,Ririn Giggs,ririn,2022-04-22,31,2819,1716,312,24,7,Crossfit, 0.87 ,0.0000
+5,Ririn Giggs,ririn,2022-04-23,26,2932,1813,293,20,6,Other, 0.85 ,0.0000
+5,Ririn Giggs,ririn,2022-04-24,22,2647,1975,328,15,7,Core, 0.79 ,0.0000
+5,Ririn Giggs,ririn,2022-04-25,26,2958,1947,279,19,7,Boxing, 0.84 ,0.0000
+5,Ririn Giggs,ririn,2022-04-26,30,2965,2102,309,25,5,Other, 0.83 ,0.0000
+5,Ririn Giggs,ririn,2022-04-27,30,2885,1910,291,25,5,Basketball, 0.85 ,0.0000
+5,Ririn Giggs,ririn,2022-04-28,20,2855,1774,320,16,4,Football, 0.81 ,0.0000
+5,Ririn Giggs,ririn,2022-04-29,26,2490,2015,304,21,5,MixedCardio, 0.81 ,0.0000
+5,Ririn Giggs,ririn,2022-04-30,20,2976,1756,313,15,5,Hiking, 0.82 ,0.0000

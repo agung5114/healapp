@@ -1,0 +1,6 @@
+﻿idp,username,name,status,health_score,reg_id,gender,height,ideal_weight,weight,age,recom_activity,calorie_need,disease
+1,ronaldo,Krisno Ronaldo,Platinum,92,LK-001,male,180,72,70,36,Berat,2520,No record
+2,david,David Bekam,Regular,60,LK-002,male,175,67.5,65,45,Sedang,2025,No record
+3,paul,Paul Soleh,Regular,55,LK-003,male,170,63,75,63,Ringan,1653.75,Jantung
+4,rini,Wayne Rini,Gold,84,PR-001,female,168,61.2,55,48,Sedang,1836,No record
+5,ririn,Ririn Giggs,Regular,63,PR-002,female,165,58.5,65,75,Ringan,1389.375,Diabetes

@@ -1,0 +1,16 @@
+﻿date,idp,name,reg,unit,service,doctor,fee,diagnose,action
+2022-04-01,5,Ririn Giggs,REG-4-1,Cluster Internal Disease,Consult,Ferguso,500000,Type 1 diabetes mellitus,Control
+2022-04-02,4,Wayne Rini,REG-4-2,Cluster Spine Knee & Shoulder,Consult,Alek Fergie,500000,Open wound of shoulder and upper arm,Control
+2022-04-03,3,Paul Soleh,REG-4-3,Cluster Cardiovasculer,Consult,Ferguso,500000,Cardiovascular disorders originating in the perinatal period,Control
+2022-04-04,1,Krisno Ronaldo,REG-4-4,Cluster Spine Knee & Shoulder,Consult,"Alek Fergie
+",500000,Dislocation sprain and strain of joints and ligaments of knee,Control
+2022-04-05,2,David Bekam,REG-4-5,Cluster Spine Knee & Shoulder,Consult,"Alek Fergie
+",500000,Fracture of lower leg including ankle,Control
+2022-04-17,5,Ririn Giggs,REG-4-6,Cluster Internal Disease,Consult,Ferguso,500000,Type 1 diabetes mellitus,Control
+2022-04-19,4,Wayne Rini,REG-4-7,Cluster Spine Knee & Shoulder,Consult,"Alek Fergie
+",500000,Open wound of shoulder and upper arm,Control
+2022-04-20,3,Paul Soleh,REG-4-8,Cluster Cardiovasculer,Consult,Ferguso,500000,Cardiovascular disorders originating in the perinatal period,Control
+2022-04-22,1,Krisno Ronaldo,REG-4-9,Cluster Spine Knee & Shoulder,Consult,"Alek Fergie
+",500000,Dislocation sprain and strain of joints and ligaments of knee,Control
+2022-04-25,2,David Bekam,REG-4-10,Cluster Spine Knee & Shoulder,Consult,"Alek Fergie
+",500000,Fracture of lower leg including ankle,Control
