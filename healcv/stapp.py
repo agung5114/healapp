@@ -78,22 +78,25 @@ menu = ["Food Analyzer","Fitness Exercise"]
 choice = st.sidebar.selectbox("Select Menu", menu)
 
 if choice == "Food Analyzer":
-    st.subheader("Heal - Food Analyzer")
-    c1, c2 = st.columns([1, 1])
-    with c1:
-        with st.expander('Open Camera'):
-            data1 = st.camera_input('')
-    with c2:
-        with st.expander('Upload from file'):
-            data2 = st.file_uploader('Upload Photo')
-
-    if data1 == None and data2 == None:
-        st.write('Take or upload a photo of food to analyze')
-        data = None
-    elif data1 == None:
-        data = data2
-    else:
-        data = data1
+    st.subheader("Computer Vision Based - Food Analyzer")
+#     c1, c2 = st.columns([1, 1])
+#     with c1:
+#         with st.expander('Open Camera'):
+#             data1 = st.camera_input('')
+#     with c2:
+#         with st.expander('Upload from file'):
+#             data2 = st.file_uploader('Upload Photo')
+    
+    with st.expander('Upload from file'):
+        data = st.file_uploader('Upload Photo')
+        
+#     if data1 == None and data2 == None:
+#         st.write('Take or upload a photo of food to analyze')
+#         data = None
+#     elif data1 == None:
+#         data = data2
+#     else:
+#         data = data1
 
     if data == None:
         pass
