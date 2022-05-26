@@ -4,6 +4,7 @@ import cv2
 import mediapipe as mp
 import numpy as np
 import time
+import streamlit as st
 
 mp_drawing = mp.solutions.drawing_utils
 mp_pose = mp.solutions.pose
@@ -21,7 +22,8 @@ def calculate_angle(a, b, c):
     return angle 
 
 def start(sets, reps):
-    cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
+    cap = st.camera('open camera')
+#     cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
     sets_counter = 0
 
     while sets_counter < sets:
