@@ -27,8 +27,8 @@ WEBRTC_CLIENT_SETTINGS = ClientSettings(
     rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
     media_stream_constraints={"video": True, "audio": False},
     )
- from streamlit.server.server import SessionInfo
 
+from streamlit.server.server import SessionInfo
 try:
     from streamlit.scriptrunner import get_script_run_ctx
 except ModuleNotFoundError:
