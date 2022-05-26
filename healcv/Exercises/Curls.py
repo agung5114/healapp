@@ -43,7 +43,7 @@ def calculate_angle(a, b, c):
 def start(sets, reps):
 #     cap = webrtc_streamer(key="example", video_transformer_factory=VideoTransformer)
 #     cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
-    cap = cv2.VideoCapture(0+cv2.CAP_DSHOW)
+    cap = cv2.VideoCapture(1,cv2.CAP_DSHOW)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
     sets_counter = 0
