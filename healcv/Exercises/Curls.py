@@ -22,7 +22,7 @@ def calculate_angle(a, b, c):
     return angle 
 
 def start(sets, reps):
-    cap = st.camera('open camera')
+    cap = st.camera_input('open camera')
 #     cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
     sets_counter = 0
 
