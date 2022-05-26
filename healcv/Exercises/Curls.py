@@ -63,7 +63,8 @@ def start(sets, reps):
 #             cap.isOpened()
             while reps_counter < reps:
 #                 ret, frame = cap.read()
-                ret, frame = cap
+                ret = 1
+                frame = cap
                 
                 # Recolor image to RGB
                 image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
