@@ -139,24 +139,27 @@ elif choice == "Fitness Exercise":
     col1, col2 = st.columns([2, 1])
     with col1:
         st.write("Select an exercise:")
-
-        bicep_curl = st.checkbox('Bicep Curl')
-        extensions = st.checkbox('Extensions')
-        squats = st.checkbox('Squats')
-        crunches = st.checkbox('Crunches')
-        rows = st.checkbox('Rows')
-        benchpress = st.checkbox('Benchpress')
+#         bicep_curl = st.checkbox('Bicep Curl')
+#         extensions = st.checkbox('Extensions')
+#         squats = st.checkbox('Squats')
+#         crunches = st.checkbox('Crunches')
+#         rows = st.checkbox('Rows')
+#         benchpress = st.checkbox('Benchpress')
 
         exercise_list = [bicep_curl, extensions, squats, crunches, rows, benchpress]
         exercises = ['Bicep Curl', 'Extensions', 'Squats','Crunches','Rows','Benchpress']
-        exercise_to_do = {}
-
-        for count, item in enumerate(exercise_list):
-            if item:
-                selected = True 
-                user_input_rep = st.text_input("Please enter rep amount: " + exercises[count], key=count)
-                user_input_sets = st.text_input("Please enter set amount: " + exercises[count],key=count)
-                exercise_to_do[exercises[count]] = {"reps":user_input_rep,"sets":user_input_sets}
+        selected = st.selectbox("Select Exercise", exercises)
+        user_input_rep = st.text_input("Please enter rep amount: " + exercises[count], key=count)
+        user_input_sets = st.text_input("Please enter set amount: " + exercises[count],key=count)
+        exercise_to_do = {f'{selected}':{"reps":user_input_rep,"sets":user_input_sets}}
+        
+#         exercise_to_do = {}
+#         for count, item in enumerate(exercise_list):
+#             if item:
+#                 selected = True 
+#                 user_input_rep = st.text_input("Please enter rep amount: " + exercises[count], key=count)
+#                 user_input_sets = st.text_input("Please enter set amount: " + exercises[count],key=count)
+#                 exercise_to_do[exercises[count]] = {"reps":user_input_rep,"sets":user_input_sets}
 
         options = st.button("Click me to begin.")
         if options:
