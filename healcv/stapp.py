@@ -149,8 +149,8 @@ elif choice == "Fitness Exercise":
 #         exercise_list = [bicep_curl, extensions, squats, crunches, rows, benchpress]
         exercises = ['Bicep Curl', 'Extensions', 'Squats','Crunches','Rows','Benchpress']
         selected = st.selectbox("Select Exercise", exercises)
-        user_input_rep = st.text_input("Please enter rep amount: " + exercises[count], key=count)
-        user_input_sets = st.text_input("Please enter set amount: " + exercises[count],key=count)
+        user_input_rep = st.number_input("Please enter rep amount: ",min_value=0, max_value=10, value=1, step=1)
+        user_input_sets = st.number_input("Please enter set amount: ",min_value=0, max_value=10, value=1, step=1)
         exercise_to_do = {f'{selected}':{"reps":user_input_rep,"sets":user_input_sets}}
         
 #         exercise_to_do = {}
