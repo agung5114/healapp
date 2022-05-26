@@ -42,6 +42,7 @@ class VideoTransformer(VideoTransformerBase):
 
 def start(sets, reps):
     cap = webrtc_streamer(key="example", video_transformer_factory=VideoTransformer)
+    cap = cv2.VideoCapture(cap)
 #     cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 #     cap = cv2.VideoCapture(0+cv2.CAP_FFMPEG)
     sets_counter = 0
