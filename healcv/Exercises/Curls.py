@@ -44,7 +44,6 @@ class VideoProcessor:
 # ctx = webrtc_streamer(key="example", client_settings=WEBRTC_CLIENT_SETTINGS,video_processor_factory=VideoProcessor)
     
 def start(sets, reps):
-    cap = ctx
 #     cap = webrtc_streamer(key="example", video_processor_factory=VideoProcessor)
     cap = cv2.VideoCapture(webrtc_streamer(key="example", client_settings=WEBRTC_CLIENT_SETTINGS,video_processor_factory=VideoProcessor),cv2.CAP_GSTREAMER)
 #     cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
