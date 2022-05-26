@@ -42,6 +42,7 @@ class VideoProcessor:
         return av.VideoFrame.from_ndarray(img, format="bgr24")
 
 ctx = webrtc_streamer(key="example", client_settings=WEBRTC_CLIENT_SETTINGS,video_processor_factory=VideoProcessor)
+st.write(ctx)
     
 def start(sets, reps):
     cap = ctx
@@ -59,7 +60,7 @@ def start(sets, reps):
 
         # Setup mediapipe instance
         with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
-            cap.isOpened()
+#             cap.isOpened()
             while reps_counter < reps:
 #                 ret, frame = cap.read()
                 ret, frame = cap
