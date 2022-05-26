@@ -28,55 +28,24 @@ WEBRTC_CLIENT_SETTINGS = ClientSettings(
     media_stream_constraints={"video": True, "audio": False},
     )
 
-from streamlit.server.server import SessionInfo
-try:
-    from streamlit.scriptrunner import get_script_run_ctx
-except ModuleNotFoundError:
-    # streamlit < 1.8
-    try:
-        from streamlit.script_run_context import get_script_run_ctx  # type: ignore
-    except ModuleNotFoundError:
-        # streamlit < 1.4
-        from streamlit.report_thread import (  # type: ignore
-            get_report_ctx as get_script_run_ctx,
-        )
+import streamlit as st
+from streamlit_webrtc import webrtc_streamer
+import av
+import cv2
 
-from streamlit.server.server import Server
-
-# Ref: https://gist.github.com/tvst/036da038ab3e999a64497f42de966a92
+st.title("My first Streamlit app")
+st.write("Hello, world")
 
 
-def get_session_id() -> str:
-    ctx = get_script_run_ctx()
-    if ctx is None:
-        raise Exception("Failed to get the thread context")
+class VideoProcessor:
+    def recv(self, frame):
+        img = frame.to_ndarray(format="bgr24")
 
-    return ctx
-# define video transformer class 
-class VideoTransformer(VideoTransformerBase):
-        frame_lock: threading.Lock  # `transform()` is running in another thread, then a lock object is used here for thread-safety.
-        in_image: Union[np.ndarray, None]
-        out_image: Union[np.ndarray, None]
+        img = cv2.cvtColor(cv2.Canny(img, 100, 200), cv2.COLOR_GRAY2BGR)
 
-        def __init__(self) -> None:
-            self.frame_lock = threading.Lock()
-            self.in_image = None
-            self.out_image = None
+        return av.VideoFrame.from_ndarray(img, format="bgr24")
 
-        def transform(self, frame: av.VideoFrame) -> np.ndarray:
-            in_image = frame.to_ndarray(format="bgr24")
-
-            out_image = in_image[:, ::-1, :]  # Simple flipping for example.
-
-            with self.frame_lock:
-                self.in_image = in_image
-                self.out_image = out_image
-
-            return out_image
-
-cctx = webrtc_streamer(key="snapshot", 
-                          client_settings=WEBRTC_CLIENT_SETTINGS,
-                          video_transformer_factory=VideoTransformer)
+cctx = webrtc_streamer(key="example", client_settings=WEBRTC_CLIENT_SETTINGS,video_processor_factory=VideoProcessor)
 
 def start(sets, reps):
 #     cap = webrtc_streamer(key="example", video_processor_factory=VideoProcessor)
