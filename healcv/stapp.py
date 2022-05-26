@@ -146,7 +146,7 @@ elif choice == "Fitness Exercise":
 #         rows = st.checkbox('Rows')
 #         benchpress = st.checkbox('Benchpress')
 
-        exercise_list = [bicep_curl, extensions, squats, crunches, rows, benchpress]
+#         exercise_list = [bicep_curl, extensions, squats, crunches, rows, benchpress]
         exercises = ['Bicep Curl', 'Extensions', 'Squats','Crunches','Rows','Benchpress']
         selected = st.selectbox("Select Exercise", exercises)
         user_input_rep = st.text_input("Please enter rep amount: " + exercises[count], key=count)
