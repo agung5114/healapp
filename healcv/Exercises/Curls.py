@@ -64,18 +64,18 @@ def start(sets, reps):
             while reps_counter < reps:
 #                 ret, frame = cap.read()
                 ret = 1
-                frame = cap
+                image = cap
                 
                 # Recolor image to RGB
-                image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-                image.flags.writeable = False
+#                 image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+#                 image.flags.writeable = False
             
                 # Make detection
                 results = pose.process(image)
             
                 # Recolor back to BGR
-                image.flags.writeable = True
-                image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+#                 image.flags.writeable = True
+#                 image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
                 
                 # Extract landmarks
                 try:
