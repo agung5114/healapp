@@ -34,8 +34,12 @@ import av
 import cv2
 
 class VideoProcessor:
+    def __init__ (self) -> None:
+        self.threshold1 = 100
+        self.threshold2 = 200
     def recv(self, frame):
         img = frame.to_ndarray(format="bgr24")
+        img = cv2.Canny(img, self.threshold1, self.threshold2)
         return img
 #         img = cv2.cvtColor(cv2.Canny(img, 100, 200), cv2.COLOR_GRAY2BGR)
 
