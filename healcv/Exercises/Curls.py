@@ -21,20 +21,42 @@ def calculate_angle(a, b, c):
     return angle 
 
 import streamlit
-from streamlit_webrtc import webrtc_streamer
+from streamlit_webrtc import VideoTransformerBase, webrtc_streamer, ClientSettings
 import av
+WEBRTC_CLIENT_SETTINGS = ClientSettings(
+    rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
+    media_stream_constraints={"video": True, "audio": False},
+    )
+    
+# define video transformer class 
+class VideoTransformer(VideoTransformerBase):
+        frame_lock: threading.Lock  # `transform()` is running in another thread, then a lock object is used here for thread-safety.
+        in_image: Union[np.ndarray, None]
+        out_image: Union[np.ndarray, None]
 
-class VideoProcessor:
-    def recv(self, frame):
-        img = frame.to_ndarray(format="bgr24")
+        def __init__(self) -> None:
+            self.frame_lock = threading.Lock()
+            self.in_image = None
+            self.out_image = None
 
-        flipped = img[::-1,:,:]
+        def transform(self, frame: av.VideoFrame) -> np.ndarray:
+            in_image = frame.to_ndarray(format="bgr24")
 
-        return av.VideoFrame.from_ndarray(flipped, format="bgr24")
+            out_image = in_image[:, ::-1, :]  # Simple flipping for example.
+
+            with self.frame_lock:
+                self.in_image = in_image
+                self.out_image = out_image
+
+            return out_image
+
+cctx = webrtc_streamer(key="snapshot", 
+                          client_settings=WEBRTC_CLIENT_SETTINGS,
+                          video_transformer_factory=VideoTransformer)
 
 def start(sets, reps):
-    cap = webrtc_streamer(key="example", video_processor_factory=VideoProcessor)
-    cap = cv2.VideoCapture(cap)
+#     cap = webrtc_streamer(key="example", video_processor_factory=VideoProcessor)
+    cap = cv2.VideoCapture(cctx)
 #     cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 #     cap = cv2.VideoCapture(0+cv2.CAP_FFMPEG)
     sets_counter = 0
