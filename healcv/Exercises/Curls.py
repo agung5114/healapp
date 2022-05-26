@@ -33,10 +33,6 @@ from streamlit_webrtc import webrtc_streamer
 import av
 import cv2
 
-st.title("My first Streamlit app")
-st.write("Hello, world")
-
-
 class VideoProcessor:
     def recv(self, frame):
         img = frame.to_ndarray(format="bgr24")
