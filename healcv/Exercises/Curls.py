@@ -41,8 +41,10 @@ class VideoProcessor:
 
         return av.VideoFrame.from_ndarray(img, format="bgr24")
 
+ctx = webrtc_streamer(key="example", client_settings=WEBRTC_CLIENT_SETTINGS,video_processor_factory=VideoProcessor)
+    
 def start(sets, reps):
-    cap = webrtc_streamer(key="example", client_settings=WEBRTC_CLIENT_SETTINGS,video_processor_factory=VideoProcessor)
+    cap = ctx
 #     cap = webrtc_streamer(key="example", video_processor_factory=VideoProcessor)
 #     cap = cv2.VideoCapture(cctx,cv2.CAP_DSHOW)
 #     cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
@@ -59,7 +61,8 @@ def start(sets, reps):
         with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
             cap.isOpened()
             while reps_counter < reps:
-                ret, frame = cap.read()
+#                 ret, frame = cap.read()
+                ret, frame = cap
                 
                 # Recolor image to RGB
                 image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
