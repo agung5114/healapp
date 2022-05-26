@@ -49,6 +49,7 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
+import os
 model_path = os.path.join(join(dirname(realpath(__file__))), "fcvmodel.h5")
 model = keras.models.load_model(model_path)
 dbfood = pd.read_csv('dbfood.csv',sep=";")
