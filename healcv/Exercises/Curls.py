@@ -41,11 +41,10 @@ class VideoProcessor:
 
         return av.VideoFrame.from_ndarray(img, format="bgr24")
 
-cctx = webrtc_streamer(key="example", client_settings=WEBRTC_CLIENT_SETTINGS,video_processor_factory=VideoProcessor)
-
 def start(sets, reps):
+    cap = webrtc_streamer(key="example", client_settings=WEBRTC_CLIENT_SETTINGS,video_processor_factory=VideoProcessor)
 #     cap = webrtc_streamer(key="example", video_processor_factory=VideoProcessor)
-    cap = cv2.VideoCapture(cctx,cv2.CAP_DSHOW)
+#     cap = cv2.VideoCapture(cctx,cv2.CAP_DSHOW)
 #     cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 #     cap = cv2.VideoCapture(0+cv2.CAP_FFMPEG)
     sets_counter = 0
