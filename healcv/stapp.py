@@ -50,7 +50,6 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 def getPrediction(data,model):
-    model = keras.models.load_model("fcvmodel.h5")
     dbfood = pd.read_csv('dbfood.csv',sep=";")
     food = dbfood['nama'].tolist()
     img = Image.open(data)
@@ -102,7 +101,7 @@ if choice == "Food Analyzer":
         newsize = (280, 230)
         image = img.resize(newsize)
         st.image(image)
-
+        model = keras.models.load_model("fcvmodel.h5")
         hasil = getPrediction(data,model)
         top = hasil.nlargest(1, 'prob')
         dfk = pd.merge(hasil,dbfood,how='left',on='nama')
