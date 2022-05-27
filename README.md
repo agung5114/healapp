@@ -10,4 +10,9 @@ Healapp consist of three applications:
   This is mobile version of the heal app that simply accessing the web application data of heal app, 
   As most of user tasks are mostly done by users themself, then mobile app will more practical to use 
 
-Please refer to each readme file in each app folder to run the applications
+Please refer to each readme file in each app folder to run the applications locally.
+For the fully deployed and integrated app, you can check http://degaya.mofdac.com or open it from our android app.
+to access menu you need to login with test users with the details as followed:
+  user : ronaldo / rini / ririn (choose one)
+  pass : Degaya2021
+  
