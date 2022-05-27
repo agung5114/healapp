@@ -12,7 +12,8 @@ Healapp consist of three applications:
 
 Please refer to each readme file in each app folder to run the applications locally.
 For the fully deployed and integrated app, you can check http://degaya.mofdac.com or open it from our android app.
-to access menu you need to login with test users with the details as followed:
+to access menu you need to login the details as followed:
+  
   user : ronaldo / rini / ririn (choose one)
-  pass : Degaya2021
+  password : Degaya2021
   
