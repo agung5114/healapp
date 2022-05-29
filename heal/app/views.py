@@ -26,6 +26,83 @@ def index(request):
     df= df[df['username']==args.user.username]
     df_act = pd.read_csv(DATAPATH+'/data/activities.csv')
     df_act= df_act[df_act['username']==args.user.username]
+    dfc = df_act.groupby(['date'],as_index=False).agg({'calorie':'sum','step':'sum','cycling':'sum','exercise':'sum','coin':'sum','score':'mean','sleep':'sum'})
+    dfc['score'] = dfc['score']*100
+    dfs = df_act.groupby(['sport'],as_index=False).agg({'date':'count'})
+    basket = dfs[dfs['sport']=='Basketball']
+    cf = dfs[dfs['sport']=='Crossfit']
+    mc = dfs[dfs['sport']=='MixedCardio']
+    hp = df_act['heartpoin'].mean()
+    score = df_act['score'].mean()*100
+    coin = df_act['coin'].sum()
+    step_goal = 100*dfc['step'].mean()/10000
+    sleep_goal = 100*dfc['sleep'].mean()/480
+    calorie_goal = 100*dfc['calorie'].mean()/2500
+    context = {
+        'gender': json.dumps(df['gender'].tolist()),
+        'height': json.dumps(df['height'].tolist()),
+        'weight': json.dumps(df['weight'].tolist()),
+        'disease': str(df['disease'].tolist()[0]),
+        'status': str(df['status'].tolist()[0]),
+        'name': json.dumps(df['username'].tolist()[0]),
+        'data':args,
+        'date':json.dumps(dfc['date'].tolist()),
+        'calorie':json.dumps(dfc['calorie'].tolist()),
+        'step':json.dumps(dfc['step'].tolist()),
+        'basketball':json.dumps(basket['date'].tolist()[0]),
+        'crossfit':json.dumps(cf['date'].tolist()[0]),
+        'mixedcardio':json.dumps(mc['date'].tolist()[0]),
+        'cycling':json.dumps(dfc['cycling'].tolist()),
+        'exercise':json.dumps(dfc['exercise'].tolist()),
+        'date2':json.dumps(dfc['date'].tolist()),
+        'heartpoint':str("{:.2f}".format(hp)),
+        'score':str("{:.2f}".format(score)),
+        'coin':str("{:.4f}".format(coin)),
+        'coins':json.dumps(dfc['coin'].tolist()),
+        'scores':json.dumps(dfc['score'].tolist()),
+        'step_goal':str("{:.2f}".format(step_goal)),
+        'sleep_goal':str("{:.2f}".format(sleep_goal)),
+        'calorie_goal':str("{:.2f}".format(calorie_goal)),
+    }
+    # return render(request,'profil.html',{'data':args})
+    # return render(request,'dashboard.html',{'data':args})
+    return render(request,'profile.html',context)
+
+# @csrf_exempt
+# @login_required(login_url="/login/")    
+def wallet(request):
+    # return render(request,'makan.html',{
+    #     "makans":Makan.objects.all()
+    # })
+    return render(request,'wallet.html',{
+        "makans":Makan.objects.all()
+    })
+
+# @csrf_exempt
+@login_required(login_url="/login/")
+def olahraga(request):
+    user = request.user
+    df = pd.read_excel(DATAPATH+'/aktifitas.xlsx')
+    # df = df[df['username'].isin([str(user)])]
+    df['tanggal'] = df['tanggal'].astype('str')
+    nama = str(df['username'].unique())
+    context = {
+        'categories': json.dumps(df['tanggal'].tolist()),
+        'tensi': json.dumps(df['GulaDarah'].tolist()),
+        'gula_darah': json.dumps(df['Tensi'].tolist()),
+        'nama': nama
+    }
+    return render(request,'olahraga.html',context)
+
+# @csrf_exempt
+@login_required(login_url="/login/")
+def activity(request):
+    args = Userdata.objects.get(user=request.user)
+    df = pd.read_csv(DATAPATH+'/data/profile.csv')
+    # df = df[df['username'].isin([str(user)])]
+    df= df[df['username']==args.user.username]
+    df_act = pd.read_csv(DATAPATH+'/data/activities.csv')
+    df_act= df_act[df_act['username']==args.user.username]
     dfc = df_act.groupby(['date'],as_index=False).agg({'calorie':'sum','step':'sum','cycling':'sum','exercise':'sum'})
     dfs = df_act.groupby(['sport'],as_index=False).agg({'date':'count'})
     basket = dfs[dfs['sport']=='Basketball']
@@ -55,40 +132,7 @@ def index(request):
         'score':str("{:.2f}".format(score)),
         'coin':str("{:.4f}".format(coin))
     }
-    # return render(request,'profil.html',{'data':args})
-    # return render(request,'dashboard.html',{'data':args})
-    return render(request,'profile.html',context)
-
-# @csrf_exempt
-@login_required(login_url="/login/")    
-def wallet(request):
-    # return render(request,'makan.html',{
-    #     "makans":Makan.objects.all()
-    # })
-    return render(request,'wallet.html',{
-        "makans":Makan.objects.all()
-    })
-
-# @csrf_exempt
-@login_required(login_url="/login/")
-def olahraga(request):
-    user = request.user
-    df = pd.read_excel(DATAPATH+'/aktifitas.xlsx')
-    # df = df[df['username'].isin([str(user)])]
-    df['tanggal'] = df['tanggal'].astype('str')
-    nama = str(df['username'].unique())
-    context = {
-        'categories': json.dumps(df['tanggal'].tolist()),
-        'tensi': json.dumps(df['GulaDarah'].tolist()),
-        'gula_darah': json.dumps(df['Tensi'].tolist()),
-        'nama': nama
-    }
-    return render(request,'olahraga.html',context)
-
-# @csrf_exempt
-@login_required(login_url="/login/")
-def activity(request):
-    return render(request,'activity.html')
+    return render(request,'activity.html',context)
 
 # @login_required(login_url="/login/")
 def hospital(request):
