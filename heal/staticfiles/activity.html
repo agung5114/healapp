@@ -21,15 +21,120 @@
   }
 </style>
 <div class="d-sm-flex justify-content-between align-items-center mb-4">
-    <h3 class="text-dark mb-0" style="margin-top: 20px;margin-left: 10px;">Activity Tracker</h3>
+    <h3 class="text-dark mb-0" style="margin-top: 20px;margin-left: 10px;">Activities and Eats</h3>
     <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button" style="margin-right: 10px;margin-top: 20px;">Menu</button>
         <div class="dropdown-menu"><a class="dropdown-item" href="{% url 'home'%}">Dashboard</a><a class="dropdown-item" href="{% url 'wallet'%}">Wallet</a><a class="dropdown-item" href="{% url 'activity'%}">Activity</a><a class="dropdown-item" href="{% url 'leaderboard'%}">Leaderboard</a></div>
     </div>
 </div>
 <div class="row mb-3">
-    <div class="col iframe-container">
-        <!-- <iframe class="responsive-iframe" src="https://www.youtube.com/embed/U8iro7KHuV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <iframe class="responsive-iframe" src="https://share.streamlit.io/agung5114/foodcv/main/stapp.py" title="Polkadot Network" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>    
+  <div class="col mb-3">
+    <ul class="nav nav-tabs nav-pills nav-fill" role="tablist">
+        <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Google Fit Activities</a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Food Analyzer</a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Exercise Trainer</a></li>
+    </ul>
+    <div class="tab-content mt-4">
+        <div class="tab-pane  active" role="tabpanel" id="tab-1">
+          <div class="row">
+            <div class="col-lg-2 col-xl-2">
+              <div class="card shadow mb-4">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                      <h6 class="text-primary font-weight-bold m-0">Sports</h6>
+                      <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                          <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in">
+                              <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
+                              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;BasketBall&quot;,&quot;CrossFit&quot;,&quot;MixedCardio&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;{{basketball}}&quot;,&quot;{{crossfit}}&quot;,&quot;{{mixedcardio}}&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas></div>
+                      <div class="text-center small mt-4">
+                          <span class="mr-2"><i class="fas fa-circle text-primary"></i>BasketBall</span>
+                          <span class="mr-2"><i class="fas fa-circle text-success"></i>&nbsp;Cross Fit</span>
+                          <span class="mr-2"><i class="fas fa-circle text-info"></i>&nbsp;Mixed Cardio</span></div>
+                  </div>
+              </div>
+          </div>
+            <div class="col-lg-5 col-xl-5">
+              <div class="card shadow mb-4">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                      <h6 class="text-primary font-weight-bold m-0">Exercise and Cycling</h6>
+                      <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                      </div>
+                  </div>
+                <div class="card-body">
+                  <div id="area-container"></div>
+                  <script src="https://code.highcharts.com/highcharts.src.js"></script>
+                  <script>
+                      Highcharts.chart('area-container', {
+                          type: 'area',
+                          title: {
+                              text: 'Time Taken for Exercise and Cycling (minutes)'
+                          },
+                          xAxis: {
+                              categories: {{date2 | safe}}
+                          },
+                          series: [{
+                              name: 'Cycling',
+                              data: {{cycling}},
+                          }, {
+                              name: 'Exercise',
+                              data: {{exercise}},
+                          }],
+                      });
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-xl-5">
+              <div class="card shadow mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h6 class="text-primary font-weight-bold m-0">Daily Steps Taken</h6>
+                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="bar-container"></div>
+                    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+                    <script>
+                    Highcharts.chart('bar-container', {
+                        title: {
+                            text: 'Number of Steps Taken and Calories Burn'
+                        },
+                        xAxis: {
+                            categories: {{date | safe}}
+                        },
+                        series: [{
+                            type: 'column',
+                            name: 'Steps taken',
+                            data: {{step}},
+                            color: 'teal'
+                        }, {
+                            type: 'column',
+                            name: 'Calorie Burn',
+                            data: {{calorie}},
+                            color: 'orange'
+                        }],
+                    });
+                    </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="tab-2">
+          <div class="iframe-container">
+            <iframe class="responsive-iframe" src="https://share.streamlit.io/agung5114/foodcv/main/stapp.py" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <iframe class="responsive-iframe" sandbox="allow-forms allow-scripts" src="https://share.streamlit.io/agung5114/foodcv/main/stapp.py"></iframe> -->
+          </div> 
+        </div>
+        <div class="tab-pane" role="tabpanel" id="tab-3">
+            <div class="iframe-container">
+              <iframe class="responsive-iframe" src="https://share.streamlit.io/agung5114/healapp/main/healcv/stapp.py" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!-- <iframe class="responsive-iframe" sandbox="allow-forms allow-scripts" src="https://share.streamlit.io/agung5114/foodcv/main/stapp.py"></iframe> -->
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

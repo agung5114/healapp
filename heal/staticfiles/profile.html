@@ -1,6 +1,54 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
+<style>
+#container-gauge {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 380px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+</style>
 <div class="d-sm-flex justify-content-between align-items-center mb-4">
     <h3 class="text-dark mb-0" style="margin-top: 20px;margin-left: 10px;">Patient Dashboard</h3>
     <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button" style="margin-right: 10px;margin-top: 20px;">Menu</button>
@@ -13,73 +61,213 @@
             <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="{% static 'assets/images/admin.png'%}" width="160" height="160">
                 <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">{{user.first_name}} {{user.last_name}}</button></div>
             </div>
-        </div>
-        <div class="card shadow mb-3">
-            <div class="card-header py-3">
-                <p class="text-primary m-0 font-weight-bold">Patient Details</p>
-            </div>
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                                <th style="background: var(--white);">Age</th>
-                                <th style="background: var(--white);">{{data.umur}}</th>
-                            </tr>
-                            <tr>
-                                <td style="background: var(--white);">Height</td>
-                                <td style="background: var(--white);">{{data.tb}}</td>
-                            </tr>
-                            <tr>
-                                <td style="background: var(--white);">Weight</td>
-                                <td style="background: var(--white);">{{data.bb}}</td>
-                            </tr>
-                            <tr >
-                                <td style="background: var(--white);">Disease</td>
-                                <td style="background: var(--white);">{{disease}}</td>
-                            </tr>
-                            <tr >
-                                <td style="background: var(--white);">Patient Status</td>
-                                <td style="background: var(--white);">{{status}}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fdevelopers.google.com%2F_d%2Freturn%3Fcontinue%3Dhttps%253A%252F%252Fdevelopers.google.com%252Ffit&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn btn-primary" role="button" style="margin-bottom: 20px;" target="_blank">CONNECT TO GOOGLE FIT</a>
-                </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th style="background: var(--white);">Age / Height/ Weight</th>
+                            <th style="background: var(--white);">{{data.umur}} / {{data.tb}} / {{data.bb}}</th>
+                        </tr>
+                        <tr >
+                            <td style="background: var(--white);">Disease</td>
+                            <td style="background: var(--white);">{{disease}}</td>
+                        </tr>
+                        <tr >
+                            <td style="background: var(--white);">Patient Status</td>
+                            <td style="background: var(--white);">{{status}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fdevelopers.google.com%2F_d%2Freturn%3Fcontinue%3Dhttps%253A%252F%252Fdevelopers.google.com%252Ffit&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn btn-primary" role="button" style="margin-bottom: 20px;" target="_blank">CONNECT TO GOOGLE FIT</a>
             </div>
         </div>
-        <div class="card shadow mb-4">
+        <div class="card">
             <div class="card-header py-3">
                 <h6 class="text-primary font-weight-bold m-0">Goal Progress</h6>
             </div>
             <div class="card-body">
-                <h4 class="small font-weight-bold">Number of Steps<span class="float-right">35%</span></h4>
-                <div class="progress progress-sm mb-3">
-                    <div class="progress-bar bg-danger" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 35%;"><span class="sr-only"></span></div>
-                </div>
-                <h4 class="small font-weight-bold">Time Sleep<span class="float-right">40%</span></h4>
-                <div class="progress progress-sm mb-3">
-                    <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="sr-only"></span></div>
-                </div>
-                <h4 class="small font-weight-bold">Exercise<span class="float-right">60%</span></h4>
-                <div class="progress progress-sm mb-3">
-                    <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only"></span></div>
-                </div>
-                <h4 class="small font-weight-bold">Calories<span class="float-right">80%</span></h4>
-                <div class="progress progress-sm mb-3">
-                    <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only"></span></div>
-                </div>
-                <h4 class="small font-weight-bold">Nutritional intake<span class="float-right">Complete!</span></h4>
-                <div class="progress progress-sm mb-3">
-                    <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="sr-only"></span></div>
-                </div>
+                <script src="https://code.highcharts.com/highcharts.js"></script>
+                <script src="https://code.highcharts.com/highcharts-more.js"></script>
+                <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+                <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                <script src="https://code.highcharts.com/modules/export-data.js"></script>
+                <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+                
+                <figure class="highcharts-figure">
+                    <div id="container-gauge"></div>
+                </figure>
+            <script>
+                function renderIcons() {
+                // Move icon
+                if (!this.series[0].icon) {
+                    this.series[0].icon = this.renderer.path(['M', -8, 0, 'L', 8, 0, 'M', 0, -8, 'L', 8, 0, 0, 8])
+                        .attr({
+                            stroke: '#303030',
+                            'stroke-linecap': 'round',
+                            'stroke-linejoin': 'round',
+                            'stroke-width': 2,
+                            zIndex: 10
+                        })
+                        .add(this.series[2].group);
+                }
+                this.series[0].icon.translate(
+                    this.chartWidth / 2 - 10,
+                    this.plotHeight / 2 - this.series[0].points[0].shapeArgs.innerR -
+                        (this.series[0].points[0].shapeArgs.r - this.series[0].points[0].shapeArgs.innerR) / 2
+                );
+
+                // Exercise icon
+                if (!this.series[1].icon) {
+                    this.series[1].icon = this.renderer.path(
+                        ['M', -8, 0, 'L', 8, 0, 'M', 0, -8, 'L', 8, 0, 0, 8,
+                            'M', 8, -8, 'L', 16, 0, 8, 8]
+                    )
+                        .attr({
+                            stroke: '#ffffff',
+                            'stroke-linecap': 'round',
+                            'stroke-linejoin': 'round',
+                            'stroke-width': 2,
+                            zIndex: 10
+                        })
+                        .add(this.series[2].group);
+                }
+                this.series[1].icon.translate(
+                    this.chartWidth / 2 - 10,
+                    this.plotHeight / 2 - this.series[1].points[0].shapeArgs.innerR -
+                        (this.series[1].points[0].shapeArgs.r - this.series[1].points[0].shapeArgs.innerR) / 2
+                );
+
+                // Stand icon
+                if (!this.series[2].icon) {
+                    this.series[2].icon = this.renderer.path(['M', 0, 8, 'L', 0, -8, 'M', -8, 0, 'L', 0, -8, 8, 0])
+                        .attr({
+                            stroke: '#303030',
+                            'stroke-linecap': 'round',
+                            'stroke-linejoin': 'round',
+                            'stroke-width': 2,
+                            zIndex: 10
+                        })
+                        .add(this.series[2].group);
+                }
+
+                this.series[2].icon.translate(
+                    this.chartWidth / 2 - 10,
+                    this.plotHeight / 2 - this.series[2].points[0].shapeArgs.innerR -
+                        (this.series[2].points[0].shapeArgs.r - this.series[2].points[0].shapeArgs.innerR) / 2
+                );
+                }
+                Highcharts.chart('container-gauge', {
+                chart: {
+                    type: 'solidgauge',
+                    height: '110%',
+                    events: {
+                        render: renderIcons
+                    }
+                },
+
+                title: {
+                    text: 'Activities & Eats',
+                    style: {
+                        fontSize: '24px'
+                    }
+                },
+
+                tooltip: {
+                    borderWidth: 0,
+                    backgroundColor: 'none',
+                    shadow: false,
+                    style: {
+                        fontSize: '16px'
+                    },
+                    valueSuffix: '%',
+                    pointFormat: '{series.name}<br><span style="font-size:2em; color: {point.color}; font-weight: bold">{point.y}</span>',
+                    positioner: function (labelWidth) {
+                        return {
+                            x: (this.chart.chartWidth - labelWidth) / 2,
+                            y: (this.chart.plotHeight / 2) + 15
+                        };
+                    }
+                },
+
+                pane: {
+                    startAngle: 0,
+                    endAngle: 360,
+                    background: [{ // Track for Move
+                        outerRadius: '112%',
+                        innerRadius: '88%',
+                        backgroundColor: Highcharts.color(Highcharts.getOptions().colors[0])
+                            .setOpacity(0.3)
+                            .get(),
+                        borderWidth: 0
+                    }, { // Track for Exercise
+                        outerRadius: '87%',
+                        innerRadius: '63%',
+                        backgroundColor: Highcharts.color(Highcharts.getOptions().colors[1])
+                            .setOpacity(0.3)
+                            .get(),
+                        borderWidth: 0
+                    }, { // Track for Stand
+                        outerRadius: '62%',
+                        innerRadius: '38%',
+                        backgroundColor: Highcharts.color(Highcharts.getOptions().colors[2])
+                            .setOpacity(0.3)
+                            .get(),
+                        borderWidth: 0
+                    }]
+                },
+
+                yAxis: {
+                    min: 0,
+                    max: 100,
+                    lineWidth: 0,
+                    tickPositions: []
+                },
+
+                plotOptions: {
+                    solidgauge: {
+                        dataLabels: {
+                            enabled: false
+                        },
+                        linecap: 'round',
+                        stickyTracking: false,
+                        rounded: true
+                    }
+                },
+
+                series: [{
+                    name: 'Steps',
+                    data: [{
+                        color: Highcharts.getOptions().colors[0],
+                        radius: '112%',
+                        innerRadius: '88%',
+                        y: {{step_goal}}
+                    }]
+                }, {
+                    name: 'Sleeps',
+                    data: [{
+                        color: Highcharts.getOptions().colors[1],
+                        radius: '87%',
+                        innerRadius: '63%',
+                        y: {{sleep_goal}}
+                    }]
+                }, {
+                    name: 'Calories',
+                    data: [{
+                        color: Highcharts.getOptions().colors[2],
+                        radius: '62%',
+                        innerRadius: '38%',
+                        y: {{calorie_goal}}
+                    }]
+                }]
+                });
+            </script>
             </div>
         </div>
     </div>
     <div class="col-lg-8">
         <div class="row mb-3">
             <div class="col-lg-4">
-                <div class="card text-white bg-primary shadow">
+                <div class="card text-muted bg-warning shadow">
                     <div class="card-body">
                         <div class="row mb-2">
                             <div class="col">
@@ -125,33 +313,22 @@
             <div class="col">
                 <div class="card shadow mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <h6 class="text-primary font-weight-bold m-0">Activity Highlight</h6>
-                        <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
-                            <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in">
-                                <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
-                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
-                            </div>
-                        </div>
+                        <h6 class="text-primary font-weight-bold m-0">Coin Earns</h6>
                     </div>
                     <div id="bar-container"></div>
                     <script src="https://code.highcharts.com/highcharts.src.js"></script>
                     <script>
                     Highcharts.chart('bar-container', {
                         title: {
-                            text: 'Number of Steps Taken and Calories Burn'
+                            text: 'Daily Coin Earned'
                         },
                         xAxis: {
                             categories: {{date | safe}}
                         },
                         series: [{
                             type: 'column',
-                            name: 'Steps taken',
-                            data: {{step}},
-                            color: 'teal'
-                        }, {
-                            type: 'column',
-                            name: 'Calorie Burn',
-                            data: {{calorie}},
+                            name: 'Coin Earned',
+                            data: {{coins}},
                             color: 'orange'
                         }],
                     });
@@ -160,36 +337,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-5 col-xl-4">
+            <div class="col">
                 <div class="card shadow mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <h6 class="text-primary font-weight-bold m-0">Sports</h6>
-                        <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
-                            <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in">
-                                <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
-                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="chart-area"><canvas data-bss-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;BasketBall&quot;,&quot;CrossFit&quot;,&quot;MixedCardio&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;{{basketball}}&quot;,&quot;{{crossfit}}&quot;,&quot;{{mixedcardio}}&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas></div>
-                        <div class="text-center small mt-4">
-                            <span class="mr-2"><i class="fas fa-circle text-primary"></i>BasketBall</span>
-                            <span class="mr-2"><i class="fas fa-circle text-success"></i>&nbsp;Cross Fit</span>
-                            <span class="mr-2"><i class="fas fa-circle text-info"></i>&nbsp;Mixed Cardio</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7 col-xl-8">
-                <div class="card shadow mb-4">
-                    <div class="card-header d-flex justify-content-between align-items-center">
-                        <h6 class="text-primary font-weight-bold m-0">Exercise and Cycling</h6>
-                        <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
-                            <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in">
-                                <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
-                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
-                            </div>
-                        </div>
+                        <h6 class="text-primary font-weight-bold m-0">Heart Points</h6>
                     </div>
                     <div class="card-body">
                         <div id="area-container"></div>
@@ -198,18 +349,17 @@
                             Highcharts.chart('area-container', {
                                 type: 'area',
                                 title: {
-                                    text: 'Time Taken for Exercise and Cycling (minutes)'
+                                    text: 'Daily Heart Point Scores'
                                 },
                                 xAxis: {
-                                    categories: {{date2 | safe}}
+                                    categories: {{date | safe}}
                                 },
-                                series: [{
-                                    name: 'Cycling',
-                                    data: {{cycling}},
-                                }, {
-                                    name: 'Exercise',
-                                    data: {{exercise}},
-                                }],
+                                    series: [{
+                                    type: 'column',
+                                    name: 'Heart point',
+                                    data: {{scores}},
+                                    color: 'teal'
+                                },],
                             });
                         </script>
                     </div>
