@@ -82,6 +82,7 @@ with col2:
     #     cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
         
 with col3:
+    st.subheader('Track Your Motion')
     sets = user_input_sets
     reps = user_input_rep
     def calculate_angle(a,b,c):
@@ -214,12 +215,17 @@ with col3:
     RTC_CONFIGURATION = RTCConfiguration(
         {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
     )
-    cam = webrtc_streamer(
-        key="opencv-filter",
-        mode=WebRtcMode.SENDRECV,
-        rtc_configuration=RTC_CONFIGURATION,
-        video_processor_factory=VideoProcessor,
-        media_stream_constraints={"video": True, "audio": False},
-        async_processing=True)
+    
+    with st.expander('Open Webrtc'):
+        cam = webrtc_streamer(
+            key="opencv-filter",
+            mode=WebRtcMode.SENDRECV,
+            rtc_configuration=RTC_CONFIGURATION,
+            video_processor_factory=VideoProcessor,
+            media_stream_constraints={"video": True, "audio": False},
+            async_processing=True)
+    
+    with st.expander('Open Camera'):
+        st.camera('Open Camera')
 
     
