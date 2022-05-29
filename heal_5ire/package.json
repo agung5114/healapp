@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@5ire/api": "^0.2.2"
+  },
+  "type": "module"
+}
