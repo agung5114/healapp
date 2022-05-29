@@ -226,6 +226,6 @@ with col3:
             async_processing=True)
     
     with st.expander('Open Camera'):
-        st.camera('Open Camera')
+        st.camera_input('Open Camera')
 
     
