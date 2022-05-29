@@ -1,2 +1,2 @@
 install dependencies required via pip install -r requirements.txt
-run app with streamlit run app.py
+for local deployment, run app with streamlit run stapp_local.py
