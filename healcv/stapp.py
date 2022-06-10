@@ -86,7 +86,7 @@ with col3:
     annotated_text(
         "Let's get started!",
     )
-    st.camera_input()
+    st.camera_input('Open Camera')
 #     sets = user_input_sets
 #     reps = user_input_rep
 #     def calculate_angle(a,b,c):
