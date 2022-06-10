@@ -32,7 +32,7 @@ from streamlit_webrtc import (
 )
 # from streamlit_webrtc import VideoTransformerBase, webrtc_streamer, ClientSettings
 import av
-from args import get_args
+# from args import get_args
 
 st.set_page_config(
     page_title='healcv',
