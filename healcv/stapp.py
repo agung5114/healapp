@@ -12,7 +12,7 @@ import operator
 import sys
 
 # import mediapipe as mp
-import main
+# import main
 import requests
 from streamlit_lottie import st_lottie
 from annotated_text import annotated_text
