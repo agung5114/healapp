@@ -72,13 +72,14 @@ col2, col3= st.columns([2,2])
     # st_lottie(lottie_diagram, key='diagram')
 
 with col2:
-    import time
-    st.write("Select an exercise:")
-    exercises = ['Bicep Curl', 'Extensions', 'Squats','Crunches','Rows','Benchpress']
-    selected = st.selectbox("Select Exercise", exercises)
-    user_input_rep = st.number_input("Please enter rep amount: ",min_value=0, max_value=10, value=1, step=1)
-    user_input_sets = st.number_input("Please enter set amount: ",min_value=0, max_value=10, value=1, step=1)
-    exercise_to_do = {f'{selected}':{"sets":user_input_sets,"reps":user_input_rep}}
+    st.video('https://www.youtube.com/embed/moVQAbi5uks') 
+#     import time
+#     st.write("Select an exercise:")
+#     exercises = ['Bicep Curl', 'Extensions', 'Squats','Crunches','Rows','Benchpress']
+#     selected = st.selectbox("Select Exercise", exercises)
+#     user_input_rep = st.number_input("Please enter rep amount: ",min_value=0, max_value=10, value=1, step=1)
+#     user_input_sets = st.number_input("Please enter set amount: ",min_value=0, max_value=10, value=1, step=1)
+#     exercise_to_do = {f'{selected}':{"sets":user_input_sets,"reps":user_input_rep}}
     # def start(sets, reps):
     #     cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
         
