@@ -134,6 +134,35 @@ def activity(request):
     }
     return render(request,'activity.html',context)
 
+@login_required(login_url="/login/")
+def airquality(request):
+    args = Userdata.objects.get(user=request.user)
+    df = pd.read_csv(DATAPATH+'/data/profile.csv')
+    # df = df[df['username'].isin([str(user)])]
+    df= df[df['username']==args.user.username]
+    df_act = pd.read_csv(DATAPATH+'/data/activities.csv')
+    df_act= df_act[df_act['username']==args.user.username]
+    dfc = df_act.groupby(['date'],as_index=False).agg({'calorie':'sum','step':'sum','cycling':'sum','exercise':'sum','coin':'sum','score':'mean','sleep':'sum'})
+    dfc['score'] = dfc['score']*100
+    dfs = df_act.groupby(['sport'],as_index=False).agg({'date':'count'})
+    basket = dfs[dfs['sport']=='Basketball']
+    cf = dfs[dfs['sport']=='Crossfit']
+    mc = dfs[dfs['sport']=='MixedCardio']
+    hp = df_act['heartpoin'].mean()
+    score = df_act['score'].mean()*100
+    coin = df_act['coin'].sum()
+    context = {
+        'status': str(df['status'].tolist()[0]),
+        'name': json.dumps(df['username'].tolist()[0]),
+        'data':args,
+        'date':json.dumps(dfc['date'].tolist()),
+        'score':str("{:.2f}".format(score)),
+        'coin':str("{:.4f}".format(coin)),
+        'coins':json.dumps(dfc['coin'].tolist()),
+        'scores':json.dumps(dfc['score'].tolist()),
+    }
+    return render(request,'airquality.html',context)
+    
 # @login_required(login_url="/login/")
 def hospital(request):
     return render(request,'hospital.html')

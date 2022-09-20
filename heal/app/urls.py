@@ -18,6 +18,7 @@ urlpatterns = [
     path('wallet/', views.wallet, name='wallet'),
     path('olahraga/', views.olahraga, name='olahraga'),
     path('activity/', views.activity, name='activity'),
+    path('airquality/', views.airquality, name='airquality'),
     path('leaderboard/', views.leaderboard, name='leaderboard'),
     path('hospital/', views.hospital, name='hospital'),
     path('government/', views.government, name='government'),
