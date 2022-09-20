@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<style>
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    padding-top: 5%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    /*position: relative;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    width: 100%;
+    height: 600px;
+  }
+</style>
+
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+  }
+</script>
+<div class="d-sm-flex justify-content-between align-items-center mb-4">
+    <h3 class="text-dark mb-0" style="margin-top: 20px;margin-left: 10px;">Air Quality Index</h3>
+    <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" type="button" style="margin-right: 10px;margin-top: 20px;">Menu</button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="{% url 'home'%}">Dashboard</a>
+            <a class="dropdown-item" href="{% url 'airquality'%}">Air Quality</a>
+            <a class="dropdown-item" href="{% url 'activity'%}">Activity</a>
+            <a class="dropdown-item" href="{% url 'wallet'%}">Wallet</a>
+            <a class="dropdown-item" href="{% url 'leaderboard'%}">Leaderboard</a></div>
+    </div>
+</div>
+<div class="row mb-3">
+  <div class="col mb-3">
+    <ul class="nav nav-tabs nav-pills nav-fill" role="tablist">
+        <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-2">Regional AQI </a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">AQI Reporting</a></li>
+    </ul>
+    <div class="tab-content mt-4">
+        <div class="tab-pane active" role="tabpanel" id="tab-2">
+            <div class="row">
+                <div class="col-md-12 col-md-12">
+                  <!--<div class="md-12">-->
+                     <!--<iframe class="responsive-iframe" src="https://agung5114-a3plus-grabfoodcvstmap-8vps9w.streamlitapp.com" title="Food Analyzer" frameborder="0" scrolling="no" onload="resizeIframe(this)" allow="camera;microphone"></iframe>-->
+                     <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://agung5114-a3plus-grabfoodcvstmap-8vps9w.streamlitapp.com/?embedded=true" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="tab-3">
+            <div class="tab-pane" role="tabpanel" id="tab-3">
+                <div class="row">
+                    <div class="col-md-12">
+                         <iframe class="responsive-iframe" src="https://agung5114-a3plus-grabfoodcvapp-3gv50f.streamlitapp.com/?embedded=true" title="Exercise" frameborder="0" scrolling="no" onload="resizeIframe(this)" allow="geolocation">
+                         </iframe> 
+                    </div> 
+                </div>
+            </div>
+            <!--<div class="iframe-container">-->
+            <!--  <iframe class="responsive-iframe" src="https://agung5114-a3plus-grabfoodcvapp-3gv50f.streamlitapp.com/?embedded=true" title="Exercise" frameborder="0" scrolling="no" onload="resizeIframe(this)" allow="geolocation"></iframe>-->
+              <!-- <iframe class="responsive-iframe" sandbox="allow-forms allow-scripts" src="https://share.streamlit.io/agung5114/foodcv/main/stapp.py"></iframe> -->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+{% endblock %}
