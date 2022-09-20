@@ -72,7 +72,7 @@ col2, col3= st.columns([2,2])
     # st_lottie(lottie_diagram, key='diagram')
 
 with col2:
-    st.video('https://www.youtube.com/embed/moVQAbi5uks') 
+    st.video('https://www.youtube.com/watch?v=IT94xC35u6k') 
 #     import time
 #     st.write("Select an exercise:")
 #     exercises = ['Bicep Curl', 'Extensions', 'Squats','Crunches','Rows','Benchpress']
