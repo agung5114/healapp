@@ -2,7 +2,7 @@
 Healapp consist of the following applications: 
 1. heal (backend - frontend with django)
   This app provide interface for user to interact with 5ireJS api and manage user offchain data
-2. heal_dot
+2. heal_dotapp
   api wrapper to interact with polkadot api.
 3. healcv (computer vision app with python)
   This app employs computer vision algorithm to detect food and assisting people to exercise,
