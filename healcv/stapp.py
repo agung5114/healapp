@@ -72,7 +72,14 @@ col2, col3= st.columns([2,2])
     # st_lottie(lottie_diagram, key='diagram')
 
 with col2:
-    st.video('https://www.youtube.com/watch?v=IT94xC35u6k') 
+    level = ['Light', 'Moderate', 'High Intensity']
+    selected = st.selectbox("Select Level", level)
+    if selected == 'Light':
+        st.video('https://www.youtube.com/watch?v=IT94xC35u6k') 
+    elif selected == 'Moderate':
+        st.video('https://youtu.be/95R8GBcY-Bk')
+    else:
+        st.video('https://youtu.be/Mvo2snJGhtM')
 #     import time
 #     st.write("Select an exercise:")
 #     exercises = ['Bicep Curl', 'Extensions', 'Squats','Crunches','Rows','Benchpress']
